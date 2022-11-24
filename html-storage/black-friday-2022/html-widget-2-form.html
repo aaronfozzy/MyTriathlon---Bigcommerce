@@ -1,0 +1,35 @@
+<div class="black-friday-overlay"></div>
+  <div class="black-friday-form">
+    <div class="leftcol">
+      <div class="title">
+        Black Friday Deals
+      </div>
+      <div class="usp-text">
+        <p>Register now to reveal all our</p>
+        <p>exclusive black friday offers!</p>
+      </div>
+      <div class="small-text">
+        Make sure to check back friday through monday to see our exclusive limited time offers.
+      </div>
+    </div>
+    <div class="rightcol">
+      <div class="16672936011_-form" style="width:100%; float: right; clear:both; padding: 0px; box-sizing: border-box; background-color:; font-family: helvetica, arial, sans-serif;">
+        <form method="post"><input type="hidden" name="16672936011_-ipaddress" id="16672936011_-ipaddress">
+          <div class="webform-control" style="width: 100%; float: left; margin-bottom: 10px;">
+            <div class="webform-control-text" style="width: 100%; float: left; clear:both; margin-top: 10px;">
+              <input type="text" name="fname" placeholder="First Name" id="fname-black-friday" style="width: 100%; float: left; clear:both; padding: 20px; box-sizing: border-box; color: black!important; border: 1px solid black; background-color: white; font-size: 13px; outline: 0;">
+            </div>
+          </div>
+          <div class="webform-control" style="width: 100%; float: left; margin-bottom: 10px;">
+            <div class="webform-control-text" style="width: 100%; float: left; clear:both; margin-top: 10px;">
+              <input type="text" placeholder="Email Address" name="email" id="email-black-friday" style="width: 100%; float: left; clear:both; padding: 20px; box-sizing: border-box; color: black!important; border: 1px solid black; background-color: white; font-size: 13px; outline: 0;">
+            </div>
+          </div>
+          <div class="form-submit" style="width: 100%; float: left; clear:both;">
+            <button data-list="16672936011_" class="16672936011_-button" id="16672936011_-button" style="width: 100%; float: left; clear:both; background-color: #0066a9; color: white; padding: 8px 0px 8px 0px; font-size: 13px; border: none; margin-top: 10px; text-transform: uppercase; outline: 0;">Submit</button>
+          </div>
+        </form>
+      </div>
+      <script type="text/javascript">$(document).ready(function(){var ipAddressArray = [];$.get("https://ipinfo.io", function(response) {ipAddressArray.push(response.ip);$("#16672936011_").val(ipAddressArray);}, "jsonp");});$("#16672936011_-button").click(function(event){event.preventDefault();$("#16672936011_-button").html("Sending");var currentList = $(this).attr("data-list");var email = $("#email-black-friday").val();var fname = $("#fname-black-friday").val();var ipaddress = $("#16672936011_").val(); if(email.length){$(".black-friday-form").hide();}$.post("https://mmsapp.mytriathlon.co.uk/ajax/web-forms/webform-processor.php", {"listname": currentList, "email": email,"listname": currentList, "fname": fname,}, function(response) {Cookies.set('black_friday', 'signedup');$(".black-friday-overlay").hide(); $("#16672936011_-button").html("Thank you for Registering");});});</script>
+    </div>
+  </div>
