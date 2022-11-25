@@ -1,0 +1,10 @@
+.form-field[data-product-attribute=set-rectangle]{
+  .form-option {
+    border: 2px solid $color-lblue;
+    .form-option-variant {
+      color: $color-lblue;
+      padding: 3px 10px 3px 10px;
+      @include box-sizing(border);
+    }
+  }
+}

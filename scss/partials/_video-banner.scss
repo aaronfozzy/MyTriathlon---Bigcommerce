@@ -1,0 +1,134 @@
+body {
+    overflow-x: hidden !important; /* Hide horizontal scrollbar */
+  }
+
+.video-banner{
+  width: 100%;
+  background-color: $color-dblue;
+  float: left;
+  clear: both;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 60px;
+  @include box-sizing(border);
+  position: relative;
+  .banner-button{
+    width: 330px;
+    height: 150px;
+    border: 5px;
+    border-style: solid;
+    border-color: $color-black;
+    cursor: pointer;
+    position: relative;
+    right:190px;
+    top:20px;
+    @include max-screen($screen-mobile) {
+        position: relative;
+        left:5px;
+        top:-50px;
+      }
+    &.novice{
+      background-image: url(https://mytriathlon.co.uk/content/newsite/slider-images/novice2.jpg);
+      background-size: cover;
+    }
+    &.olympic{
+      background-image: url(https://mytriathlon.co.uk/content/newsite/slider-images/olympic2.jpg);
+      background-size: cover;
+      margin: 0px 50px 0px 50px;
+    }
+    &.kona{
+      background-image: url(https://mytriathlon.co.uk/content/newsite/slider-images/kona.png);
+      background-size: cover;
+    }
+    &.invisible{
+      display: none;
+    }
+    &.visible{
+      display: block;
+    }
+    @include max-screen($screen-huge) {
+      &.olympic {
+        margin: 50px 0px 50px 0px;
+      }
+    }
+  }
+  .video-banner-player{
+    display: none;
+    width: 1440px;
+    height: 625px;
+    margin: auto;
+    background-color: $color-lblue;
+    .actual-video{
+      display: block;
+    }
+    &.visible{
+      display: block;
+    }
+    &.invisible{
+      display: none;
+    }
+  }
+  .video-banner-back{
+    width: 100px;
+    height: 35px;
+    margin: auto;
+    border: 5px;
+    border-style: solid;
+    border-color: $color-black;
+    background-color: $color-lblue;
+    color: $color-black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor:  pointer;
+  }
+  .video-banner-back:hover{
+    background-color: $color-red;
+    color: $color-white;
+    border-color: $color-red;
+  }
+}
+.banner-button-style{
+  width: 228px;
+  background-color: $color-black;
+  color: $color-white;
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 50px;
+  padding: 2px;
+  border: 2px;
+  border-style: solid;
+  border-color: $color-white;
+  cursor: pointer;
+}
+.banner-play-button{
+  background-color: $color-black;
+  margin: 0px 125px;
+  display: block;
+  cursor: pointer;
+}
+.video-products-left{
+    display: none;
+    position: absolute;
+    left: 0;
+}
+.video-products-right{
+  display: none;
+  position: absolute;
+  right: 0;
+}
+.banner-button-title {
+  font-family: Montserrat;
+  color:$color-white;
+  font-size: 30px;
+  font-weight:400px;
+  position: relative;
+  top:-50px;
+  left:550px;
+  @include max-screen($screen-mobile) {
+      visibility: hidden;
+      right:1000px;
+    }
+}

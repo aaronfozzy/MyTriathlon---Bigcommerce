@@ -1,0 +1,159 @@
+.popup-overlay-outer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 30500;
+  top: 0px;
+  left: 0px;
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+.popup-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 30000;
+  top: 0px;
+  left: 0px;
+  display: none;
+  &.active {
+    display: flex;
+  }
+}
+.popup-outer-1 {
+  width: 770px;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  display: none;
+  align-items:center;
+  &.active {
+    display: block;
+  }
+  @include max-screen(604px) {
+      width: 90%;
+  }
+}
+.popup-outer-2 {
+  width: 550px;
+  height: auto;
+  max-height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  align-items:center;
+  display: none;
+  z-index: 31000;
+  &.active {
+    display: block;
+  }
+  @include max-screen(432px) {
+    max-height: 350px;
+  }
+}
+.popup-10-off {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  text-align: center;
+}
+.popup-country {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  z-index: 31000;
+  @include max-screen(604px) {
+      width: 95%;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .popup-country-btn {
+    padding: 8% 0% 0% 0%;
+    width: 33.5%;
+    position: relative;
+    transform: translate(14.5%, -185%);
+    opacity: 0;
+    @include max-screen(500px) {
+      transform: translate(15%, -192%);
+    }
+  }
+  h2 {
+    color: #1d2c5b;
+    text-transform: uppercase;
+    width: 90%;
+    position: absolute;
+    z-index: 32000;
+    margin: 3% 0px 0px 5%;
+    font-size: 28px;
+    @include max-screen(604px) {
+      font-size: 4.5vw;
+    }
+  }
+  .popup-country-txt-1 {
+    color: #1d2c5b;
+    position: absolute;
+    z-index: 32000;
+    margin: 20% 0% 0% 5%;
+    font-size: 15px;
+    width: 60%;
+    @include max-screen(604px) {
+      font-size: 2.5vw;
+    }
+    @include max-screen(480px) {
+      font-size: 2.6vw;
+    }
+    @include max-screen(432px) {
+      font-size: 2.7vw;
+    }
+  }
+  .popup-country-txt-2 {
+    color: #1d2c5b;
+    position: absolute;
+    z-index: 32000;
+    margin: 30% 0% 0% 5%;
+    font-size: 15px;
+    width: 60%;
+    @include max-screen(604px) {
+      font-size: 2.5vw;
+    }
+    @include max-screen(480px) {
+      font-size: 2.6vw;
+    }
+    @include max-screen(432px) {
+      font-size: 2.7vw;
+    }
+  }
+  .popup-country-txt-3 {
+    color: #1d2c5b;
+    position: absolute;
+    z-index: 32000;
+    margin: 40% 0% 0% 5%;
+    font-size: 15px;
+    width: 50%;
+    list-style-position: inside;
+    text-indent: -1em;
+    padding-left: 1em;
+    @include max-screen(604px) {
+      font-size: 2.5vw;
+    }
+    @include max-screen(480px) {
+      font-size: 2.6vw;
+    }
+    @include max-screen(432px) {
+      font-size: 2.7vw;
+    }
+  }
+}

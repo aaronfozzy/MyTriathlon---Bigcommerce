@@ -1,0 +1,117 @@
+.header-usps {
+  width: 1440px;
+  margin: auto;
+  display: none;
+  ul {
+    width: 100%;
+    float: left;
+    clear:both;
+    margin: 0px!important;
+    position: relative;
+    top: -1px;
+    li {
+      @include calc(width, "16.66666% - 10px");
+      padding: 5px 15px 5px 15px!important;
+      margin: 0px!important;
+      cursor: pointer;
+      @include box-sizing(border);
+      a {
+        border: none!important;
+        padding: 0px!important;
+        img {
+          width: 30px;
+          height: auto;
+          float: left;
+          cursor: pointer;
+        }
+        span.usp-content {
+          @include calc(width, "100% - 40px"!important);
+          float: left;
+          cursor: pointer;
+          .usp-content-main {
+            font-size: 12px!important;
+            padding-bottom: 0px!important;
+            cursor: pointer;
+          }
+          .usp-content-sub {
+            font-size: 11px!important;
+            cursor: pointer;
+          }
+        }
+      }
+      &:nth-child(1){
+        padding-top: 7px!important;
+        @include box-sizing(border);
+        a {
+          img {
+            position: relative;
+            top: 5px;
+          }
+          span.usp-content {
+            position: relative;
+            top: 6px;
+          }
+        }
+      }
+      &:nth-child(2){
+        @include box-sizing(border);
+        a {
+          img {
+            position: relative;
+            top: 5px;
+          }
+        }
+      }
+      &:nth-child(3){
+        @include box-sizing(border);
+        a {
+          img {
+            position: relative;
+            top: 1px;
+          }
+        }
+      }
+      &:nth-child(4){
+        @include box-sizing(border);
+        a {
+          img {
+            position: relative;
+            top: 4px;
+          }
+        }
+      }
+      &:nth-child(5){
+        @include box-sizing(border);
+        a {
+          img {
+            position: relative;
+            top: -1px;
+          }
+        }
+      }
+      &:nth-child(6){
+        @include box-sizing(border);
+        background-color: $color-red;
+        a {
+          span.usp-content {
+            position: relative;
+            top: 7px;
+            .usp-content-main {
+              color: $color-white!important;
+              font-size: 16px!important;
+            }
+          }
+        }
+        &:hover {
+          background-color: darken($color-red, 5%);
+        }
+      }
+      &:hover {
+        background-color: darken($color-white, 5%);
+      }
+    }
+  }
+  @include min-screen($screen-huge) {
+    display: block;
+  }
+}

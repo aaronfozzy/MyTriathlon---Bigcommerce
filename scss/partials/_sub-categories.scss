@@ -1,0 +1,43 @@
+.content-sub-categories {
+  width: 100%;
+  float: left;
+  clear:both;
+  ul {
+    width: 100%;
+    float: left;
+    clear:both;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+    list-style: none;
+    li {
+      @include calc(width, "25% - 20px");
+      border: 2px solid $color-lblue;
+      margin-bottom: 20px;
+      i {
+        display: none;
+      }
+      a {
+        width: 100%;
+        float: left;
+        clear:both;
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+        font-size: 13px;
+        font-weight: bold;
+      }
+      ul {
+        display: none;
+      }
+      &:hover {
+        border: 2px solid lighten($color-lblue, 20%);
+      }
+      @include max-screen($screen-medium) {
+        @include calc(width, "33.33333% - 20px");
+      }
+    }
+  }
+}

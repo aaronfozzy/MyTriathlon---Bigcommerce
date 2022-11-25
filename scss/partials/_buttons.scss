@@ -1,0 +1,16 @@
+.category-link {
+	border-radius: 50px;
+	color: $color-white!important;
+	background-color: $color-red!important;
+	font-weight: bold!important;
+	font-family: Montserrat!important;
+	&:hover {
+		background-color: $color-white!important;
+		color: $color-red!important;
+		border: 1px solid $color-red!important;
+	}
+}
+
+.card-figcaption-button-section {
+	opacity: 1!important;
+}

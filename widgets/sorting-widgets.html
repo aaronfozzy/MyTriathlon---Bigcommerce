@@ -1,0 +1,2240 @@
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sorting Widgets</title>
+		<link rel="stylesheet" href="../build/css/styles.css">
+	</head>
+	<body class="widget-sample">
+		<div class="mainholder-widget-sample">
+			<!------Sorting Widget Start ------->
+			<div class="widget sorting-widget">
+				<div class="config"></div>
+				<div class="background-image" style="background-image:url(https://mytriathlon.co.uk/content/event-widgets/large-banner.jpg);"><div class="background-overlay"></div></div>
+				<div class="widget-content-container">
+					<div class="heading-section">
+						<h1>Ironman</h1>
+						<h2>Events In Europe</h2>
+						<p>Brief Description Goes Here</p>
+					</div>
+					<div class="sorting-form">
+						<div class="dropdowns">
+							<div class="dropdown-item">
+								<div class="dropdown-label">Date:<span class="icon"></span></div>
+								<select id="filter-one" class="date" name="date">
+									<option value="PS">Please Select</option>
+									<option value="JAN">January</option>
+									<option value="FEB">February</option>
+									<option value="APR">April</option>
+									<option value="MAY">May</option>
+									<option value="JUN">June</option>
+									<option value="JUL">July</option>
+									<option value="AUG">August</option>
+									<option value="SEP">September</option>
+									<option value="OCT">October</option>
+									<option value="NOV">November</option>
+									<option value="DEC">December</option>
+								</select>
+							</div>
+							<div class="dropdown-item">
+								<div class="dropdown-label">Region:<span class="icon"></span></div>
+								<select id="filter-two" class="region" name="region">
+									<option value="PS">Please Select</option>
+									<option value="ESP">Spain</option>
+									<option value="UK">United Kingdom</option>
+									<option value="ANDO">Andorra</option>
+									<option value="AT">Austria</option>
+									<option value="HR">Croatia</option>
+									<option value="DK">Denmark</option>
+									<option value="EE">Estonia</option>
+									<option value="FI">Finland</option>
+									<option value="FR">France</option>
+									<option value="GER">Germany</option>
+									<option value="GR">Greece</option>
+									<option value="IE">Ireland</option>
+									<option value="IT">Italy</option>
+									<option value="LU">Luxembourg</option>
+									<option value="NL">Netherlands</option>
+									<option value="NO">Norway</option>
+									<option value="PT">Portugal</option>
+									<option value="SE">Sweden</option>									
+									<option value="CH">Switzerland</option>
+									<option value="TR">Turkey</option>
+								</select>
+							</div>
+							<div class="dropdown-item">
+								<div class="dropdown-label">Distance:<span class="icon"></span></div>
+								<select id="filter-three" class="distance" name="distance">
+									<option value="PS">Please Select</option>
+									  <option value="HI">Half Ironman</option>
+									<option value="FI">Ironman</option>
+									  <option value="O">Olympic</option>
+								</select>
+							</div>
+						</div>
+						<div class="buttons">
+							<div class="clear-filter-button"><span class="label"><span class="icon"></span>Clear Filter</span></div>			
+						</div>
+					</div>
+					<div class="viewer-info-bar">
+						<div class="title-section">
+							<span class="main-heading"></span>
+							<span class="sub-heading"></span>
+						</div>
+						<div class="full-stats">
+							<div class="full-stats-item item-one">
+								<span class="label"></span>
+								<span class="value"></span>
+							</div>
+							<div class="full-stats-item item-two">
+								<span class="label"></span>
+								<span class="value"></span>	
+							</div>
+							<div class="full-stats-item item-three">
+								<span class="label"></span>
+								<span class="value"></span>	
+							</div>
+							<div class="full-stats-item item-four">
+								<span class="label"></span>
+								<span class="value"></span>	
+							</div>
+							<div class="full-stats-item item-five">
+								<span class="label"></span>
+								<span class="value"></span>	
+							</div>
+						</div>
+						<div class="buttons">
+							<div class="clear-filter-button"><span class="label"><span class="icon"></span>Back to List</span></div>					
+						</div>
+					</div>
+				</div>
+			</div>
+			<!------Sorting Widget End ------->
+			
+			<!------Sorting Data Widget Events Start ------>
+			<div id="sorting-events-data" class="widget sorting-data-widget">
+				<ul class="widget-data-item-list">
+					
+					<!-- Event Item 1 -->
+					<li class="event-item" data-id="1" data-stat-one="Reservoir" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Rolling" data-stat-three-label="RUN" data-stat-four="65° F / 18° C" data-stat-four-label="Avg. Air Temp" data-stat-five="65° F / 18° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-70.3.png);" data-full-date="June 12th 2022" data-event-title="IRONMAN 70.3 Staffordshire" data-event-sub="Staffordshire, England, UK" data-event-description="First timer friendly course allows athlets to see England's beautiful West Midlands countryside starting with a reservoir swim, a winding bike course and finishing in Stafford's Market Square" data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-70.3.png'/>" data-event-products="" data-button-label="More Info" filter-one="JUNE" filter-two="UK" filter-three="HI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">June 12th 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman 70.3 Staffordshire</h2>
+								<h4>Staffordshire, England</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Reservoir</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Hilly</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Rolling</span>
+									</li>
+								</ul>
+								<div class="buttons">
+								  <div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					
+					<!-- Event Item 2 -->
+					<li class="event-item" data-id="2" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Hilly" data-stat-three-label="RUN" data-stat-four="68° F / 20° C" data-stat-four-label="Avg. Air Temp" data-stat-five="66° F / 19° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-uk.jpeg);" data-full-date="JULY 3rd 2022" data-event-title="IRONMAN Bolton" data-event-sub="UNITED KINGDOM" data-event-description="Listed as one of the UK's friendliest towns, Bolton is the home of England's only full distance Ironman. The race is known for the iconic spectator support, amazing North West England bike course scenery and warm welcomed finish in the heart of the town centre" data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-uk.jpeg'/>" data-event-products="" data-button-label="More Info" filter-one="JUL" filter-two="UK" filter-three="FI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">July 3rd 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman UK</h2>
+								<h4>Bolton, England</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Lake</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Hilly</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Hilly</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					
+					  <!-- Event Item 3 -->
+					<li class="event-item" data-id="3" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="66° F / 19° C" data-stat-four-label="Avg. Air Temp" data-stat-five="60° F / 16° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-swansea.jpeg);" data-full-date="AUGUST 7th 2022" data-event-title="IRONMAN 70.3 SWANSEA" data-event-sub="UNITED KINGDOM" data-event-description="The new Ironman 70.3 Swansea is the race to offer both amazing natural beauty and also rich history. Experience the natural beauty along the sweeping waterfront of Swansea Bay leading into Mumbles, a truly vibrant and colourful seaside village before entering into the cycling course which leads you onto the beautiful Gower Peninsula where the landscape must be seen to believe" data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-swansea.jpeg'/>" data-event-products="" data-button-label="More Info" filter-one="AUG" filter-two="UK" filter-three="HI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">August 7th 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman 70.3 Swansea</h2>
+								<h4>Swansea, Wales</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Ocean</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Hilly</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Flat</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Event Item 4 -->
+					<li class="event-item" data-id="4" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Hilly" data-stat-three-label="RUN" data-stat-four="61° F / 16° C" data-stat-four-label="Avg. Air Temp" data-stat-five="63° F / 17° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-wales.png);" data-full-date="SEPTEMBER 11th 2022" data-event-title="IRONMAN WALES" data-event-sub="UNITED KINGDOM" data-event-description="With world-renowned spectator support and epic courses, this is the race legends are made of. Hosted in the beautiful Welsh seaside village Tenby, Pembrokshire, athlets will leave as friends in a truly unique, inviting and amazing destination nicknamed as the Iron Town. Ironman Wales sees Tenby come to life with a stunning sunrise swim on Tenby's samdy North Beach, wild bike borse scenery along Pembrokeshire coastline, and a fan-filled town centre run in Tenby" data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-wales.png'/>" data-event-products="" data-button-label="More Info" filter-one="SEP" filter-two="UK" filter-three="FI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">September 11th 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman Wales</h2>
+								<h4>Pembrokeshire, Wales</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Ocean</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Hilly</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Hilly</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+					  <!-- Event Item 5 -->
+					<li class="event-item" data-id="5" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Rolling" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="59° F / 15° C" data-stat-four-label="Avg. Air Temp" data-stat-five="63° F / 17° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="SEPTEMBER 18th 2022" data-event-title="IRONMAN 70.3 WEYMOUTH" data-event-sub="UNITED KINGDOM" data-event-description="As the host of the Long 2012 Olympic and Paralympic sailing events, the Weymouth area is an international sport event haven. Situated off the World Heritage Site Jurassic Coast, this race is a first timer favourite with the sandy beaches, amazing coastline and beautiful Dorset Countryside" data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="SEP" filter-two="UK" filter-three="HI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">September 18th 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman 70.3 Weymouth</h2>
+								<h4>Weymouth, England</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Ocean</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Rolling</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Flat</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Event Item 6 -->
+					<li class="event-item" data-id="6" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="77° F / 25° C" data-stat-four-label="Avg. Air Temp" data-stat-five="63° F / 17° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-andorra.jpg);" data-full-date="JULY 3rd 2022" data-event-title="IRONMAN 70.3 ANDORRA" data-event-sub="ANDORRA" data-event-description="Hidden away from the hustle of the fast-lane life, this is a destination where the nature takes the centre stage. Slow down in an Euroiean endurance sporting heaven boasting the very best of what a triathlete could want, and a stunning capital with everything leisure traveller would expect. Welcome to IRONMAN 70.3 Andorra where adventure in the Pyrenees awaits you" data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-andorra.jpg'/>" data-event-products="" data-button-label="More Info" filter-one="JUL" filter-two="ANDO" filter-three="HI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">July 3rd 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman 70.3 Andorra</h2>
+								<h4>Andorra</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Lake</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Hilly</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Flat</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Event Item 7 -->
+					<li class="event-item" data-id="7" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Rolling" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="81° F / 27° C" data-stat-four-label="Avg. Air Temp" data-stat-five="73° F / 23° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-austria.jpeg);" data-full-date="JULY 3rd 2022" data-event-title="IRONMAN KARNTEN-KALGENFURT, AUSTRIA" data-event-sub="AUSTRIA" data-event-description="Known as one of the most beautiful races in the world, IRONMAN Kärnten-Klagenfurt, Austria has become legendary among athletes.  Breathtaking swim course scenery of the Wörthersee,  biking through the green heart of Carinthia, and a cauldron-like finish line in the heart of the city. This is triathlon at its purest." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-austria.jpeg'/>" data-event-products="" data-button-label="More Info" filter-one="JUL" filter-two="AT" filter-three="FI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">July 3rd 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman Karnten-Klagenfurt, Austria</h2>
+								<h4>Klagenfurt, Austria</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Lake</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Rolling</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Flat</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Event Item 8 -->
+					<li class="event-item" data-id="8" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Rolling" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="66° F / 19° C" data-stat-four-label="Avg. Air Temp" data-stat-five="63° F / 17° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-austria2.png);" data-full-date="AUGUST 28th 2022" data-event-title="IRONMAN 70.3 ZELL AM SEE-KAPRUN" data-event-sub="AUSTRIA" data-event-description="With the sparkling lake Zell as its centerpoint and glacier-covered mountains as its backdrop, this event showcases Austria's majestic scenery. A postcard-perfect destination, with a swim in lake Zell, a bike through Salzburgerland and run through the old town of Zell am See, this race is a triathlon and vacation gem." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-austria2.png'/>" data-event-products="" data-button-label="More Info" filter-one="AUG" filter-two="AT" filter-three="HI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">August 28th 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman 70.3 Zell am See-Kaprun</h2>
+								<h4>Austria</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Lake</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Rolling</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Flat</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+						 
+					<!-- Event Item 9 -->
+					<li class="event-item" data-id="9" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Flat" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="69° F / 21° C" data-stat-four-label="Avg. Air Temp" data-stat-five="63° F / 17° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-austria3.png);" data-full-date="TBD" data-event-title="IRONMAN 70.3 GRAZ" data-event-sub="AUSTRIA" data-event-description="Austria holds a special place in the history of IRONMAN and  the legacy continues as the city of Graz becomes home to the latest and one of the most anticipated events in Europe – IRONMAN 70.3 Graz. Located about 200 km (125 miles) to the South of Austria’s national capital Vienna, Graz boasts a rich history of architecture, culture and educational institutions including medical and technical universities, with a historic Unesco World Heritage city centre." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-austria3.png'/>" data-event-products="" data-button-label="More Info" filter-one="TBD" filter-two="AT" filter-three="HI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">TBD</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman 70.3 Graz</h2>
+								<h4>Graz, Austria</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Lake</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Flat</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Flat</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Event Item 10 -->
+					<li class="event-item" data-id="10" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Rolling" data-stat-two-label="BIKE" data-stat-three="Rolling" data-stat-three-label="RUN" data-stat-four="70° F / 21° C" data-stat-four-label="Avg. Air Temp" data-stat-five="64° F / 18° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-croatia.jpeg);" data-full-date="OCTOBER 16th 2022" data-event-title="IRONMAN 70.3 POREC" data-event-sub="CROATIA" data-event-description="The Istrian peninsula is a favorite destination for sports and outdoor tourism lovers. Istria is located on the glistening Adriatic coast, and its interior is dotted with green hills and medieval towns. Poreč is a coastal town and a popular tourist destination. It imposes itself as a logical choice for an important sporting competition such as IRONMAN. The mild climate and the beautiful contrast between the traditional and the modern make it a treasure trove of sights and culture. Swimming, running and cycling around this Mediterranean pearl is an invaluable pleasure." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-croatia.jpeg'/>" data-event-products="" data-button-label="More Info" filter-one="OCT" filter-two="HR" filter-three="HI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">October 16th 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman 70.3 Porec</h2>
+								<h4>Istria, Croatia</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Ocean</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Rolling</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Rolling</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Event Item 11 -->
+					<li class="event-item" data-id="11" data-stat-one="Bay" data-stat-one-label="SWIM" data-stat-two="Rolling" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="69° F / 21° C" data-stat-four-label="Avg. Air Temp" data-stat-five="63° F / 17° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-denmark.jpeg);" data-full-date="June 26th 2022" data-event-title="IRONMAN 70.3 EUROPEAN CHAMPIONSHIP ELSINORE" data-event-sub="DENMARK" data-event-description="Staged near the legendary 15th century Kronborg Castle, the IRONMAN 70.3 European Championship Elsinore is a fusion of Danish culture and nature.   The course takes advantage of the woodlands and green landscapes of Denmark as well as the stunning architecture in the city. Located a short drive from Copenhagen, Elsinore will delight visitors with its cobbled streets and numerous opportunities for exploration and discovery." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-denmark.jpeg'/>" data-event-products="" data-button-label="More Info" filter-one="JUN" filter-two="DK" filter-three="HI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">June 26th 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman 70.3 European Championship Elsinore</h2>
+								<h4>Elsinore, Denmark</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Bay</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Rolling</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Flat</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Event Item 12 -->
+					<li class="event-item" data-id="12" data-stat-one="Bay" data-stat-one-label="SWIM" data-stat-two="Rolling" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="69° F / 21° C" data-stat-four-label="Avg. Air Temp" data-stat-five="65° F / 18° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-denmark2.jpeg);" data-full-date="August 21st 2022" data-event-title="IRONMAN COPENHAGEN" data-event-sub="DENMARK" data-event-description="Copenhagen offers capital city racing with a quintessentially Danish atmosphere. Perfect for seasoned athletes and first timers alike, the course passes the world-famous Opera House, Little Mermaid statue, Amalienborg Palace, and the New Harbour waterfront." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-denmark2.jpeg'/>" data-event-products="" data-button-label="More Info" filter-one="AUG" filter-two="DK" filter-three="FI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">August 21st 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman Copenhagen</h2>
+								<h4>Copenhagen, Denmark</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Bay</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Rolling</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Flat</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Event Item 13 -->
+					<li class="event-item" data-id="13" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Rolling" data-stat-two-label="BIKE" data-stat-three="Rolling" data-stat-three-label="RUN" data-stat-four="62° F / 17° C" data-stat-four-label="Avg. Air Temp" data-stat-five="64° F / 18° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-tallinn.jpeg);" data-full-date="August 6th 2022" data-event-title="IRONMAN TALLINN" data-event-sub="ESTONIA" data-event-description="IRONMAN Tallinn's big event is a part of the midsummer triathlon festival in the capital of Estonia. The competition courses run around the historic Old Town of Tallinn and through the wonderful nature of Harju Country. At the same time, Tallinn's Old Town is listed as a UNESCO World Heritage Site. This capital city fuses historical heritage with multiform culture, characterized by its lively cafes and restaurants proudly standing next to castles, churches and museums.  The competition center is located by the Baltic Sea in the beautiful home port of Noblessner, where the old industrial architecture meets the new and the modern." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-tallinn.jpeg'/>" data-event-products="" data-button-label="More Info" filter-one="AUG" filter-two="EE" filter-three="FI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">August 6th 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman Tallinn</h2>
+								<h4>Tallinn, Estonia</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Lake</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Rolling</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Rolling</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Event Item 14 -->
+					<li class="event-item" data-id="14" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Flat" data-stat-two-label="BIKE" data-stat-three="Rolling" data-stat-three-label="RUN" data-stat-four="62° F / 17° C" data-stat-four-label="Avg. Air Temp" data-stat-five="64° F / 18° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-tallinn.jpeg);" data-full-date="August 7th 2022" data-event-title="IRONMAN 70.3 TALLINN" data-event-sub="ESTONIA" data-event-description="Welcome to Tallinn! The city that enlightens your spirits with innovative solutions and a rich history. Experience unforgettable views and unique architecture in the UNESCO-listed Old Town. Restaurants and cafés, medieval buildings, churches, and museums are waiting for you. At the top of all, Tallinn is charming with its compactness and simplicity - IRONMAN 70.3 Tallinn race center, partner hotel, and airport are all within a radius of only 8 km." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-tallinn.jpeg'/>" data-event-products="" data-button-label="More Info" filter-one="AUG" filter-two="EE" filter-three="HI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">August 7th 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman 70.3 Tallinn</h2>
+								<h4>Tallinn, Estonia</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Lake</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Flat</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Rolling</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+				  
+					<!-- Event Item 15 -->
+					<li class="event-item" data-id="15" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Rolling" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="68° F / 20° C" data-stat-four-label="Avg. Air Temp" data-stat-five="64° F / 18° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-finland.png);" data-full-date="July 2nd 2022" data-event-title="IRONMAN 70.3 FINLAND" data-event-sub="FINLAND" data-event-description="Lahti is the gateway to the Finnish Lake District, located less than an hour from Helsinki. It's known for its vibrant urban city culture with many bars, restaurants and cafes to enjoy the unique lakeside social life.  IRONMAN 70.3 Finland has become a firm favourite in the triathlon calendar, and with a unique start time of 3:30 p.m., this race features a finish under the spellbinding nordic midnight sun." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-finland.png'/>" data-event-products="" data-button-label="More Info" filter-one="JUL" filter-two="FI" filter-three="HI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">July 2nd 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman 70.3 Finland</h2>
+								<h4>Lahti, Finland</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Lake</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Rolling</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Flat</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Event Item 16 -->
+					<li class="event-item" data-id="16" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Rolling" data-stat-two-label="BIKE" data-stat-three="Rolling" data-stat-three-label="RUN" data-stat-four="64° F / 18° C" data-stat-four-label="Avg. Air Temp" data-stat-five="64° F / 18° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-finland2.png);" data-full-date="August 13th 2022" data-event-title="IRONMAN FINLAND, KUOPIO-TAHKO" data-event-sub="FINLAND" data-event-description="Tahko is a lively holiday resort in the heart of the Finnish Lakeland area known for its pure nature, colorful events, joyful activities, high-quality accommodation, great food and friendly hospitality. The changing seasons from snowy winters to colorful autumns make it a memorable destination for any outdoor enthusiast. Now, it is also home to the world's northern-most IRONMAN race featuring a crystal-clear lake swim and rolling bike and run through Finland's gorgeous countryside." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-finland2.png'/>" data-event-products="" data-button-label="More Info" filter-one="AUG" filter-two="FI" filter-three="FI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">August 13th 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman Finland, Kuopio-Tahko</h2>
+								<h4>Kuopio-Tahko, Finland</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Lake</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Rolling</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Rolling</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Event Item 17 -->
+					<li class="event-item" data-id="17" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Rolling" data-stat-two-label="BIKE" data-stat-three="Rolling" data-stat-three-label="RUN" data-stat-four="68° F / 20° C" data-stat-four-label="Avg. Air Temp" data-stat-five="61° F / 16° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-france.png);" data-full-date="May 22nd 2022" data-event-title="IRONMAN 70.3 PAYS D'AIX-EN-PROVENCE" data-event-sub="FRANCE" data-event-description="Revel in the Provençal splendour of one of France's most gorgeous cities. A regal welcome along the tree-lined Cours Mirabeau, rich art and culture amongst centuries old French and Roman history, Aix-en-Provence is the perfect destination to discover the South of France. A race encapsulating this stunning region taking in quaint villages, mountain vistas and forests" data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-france.png'/>" data-event-products="" data-button-label="More Info" filter-one="MAY" filter-two="FR" filter-three="HI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">May 22nd 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman 70.3 Pays d'Aix-en-Provence</h2>
+								<h4>Aix-en-Provence, France</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Lake</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Rolling</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Rolling</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Event Item 18 -->
+					<li class="event-item" data-id="18" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Rolling" data-stat-two-label="BIKE" data-stat-three="Rolling" data-stat-three-label="RUN" data-stat-four="68° F / 20° C" data-stat-four-label="Avg. Air Temp" data-stat-five="61° F / 16° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-france2.png);" data-full-date="May 22nd 2022" data-event-title="IRONMAN 70.3 PAYS D'AIX-EN-PROVENCE" data-event-sub="FRANCE" data-event-description="Revel in the Provençal splendour of one of France's most gorgeous cities. A regal welcome along the tree-lined Cours Mirabeau, rich art and culture amongst centuries old French and Roman history, Aix-en-Provence is the perfect destination to discover the South of France. A race encapsulating this stunning region taking in quaint villages, mountain vistas and forests." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-france2.png'/>" data-event-products="" data-button-label="More Info" filter-one="MAY" filter-two="FR" filter-three="FI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">May 22nd 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman Pays d'Aix-en-Provence</h2>
+								<h4>Aix-en-Provence, France</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Lake</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Rolling</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Rolling</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Event Item 19 -->
+					<li class="event-item" data-id="19" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="75° F / 24° C" data-stat-four-label="Avg. Air Temp" data-stat-five="72° F / 22° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-france2.png);" data-full-date="June 26th 2022" data-event-title="IRONMAN 70.3 Nice" data-event-sub="FRANCE" data-event-description="Host of the 2019 IRONMAN 70.3 World Championship, Nice offers athletes the best of the Côte d’Azur. Nestled between sea and mountains, experience a well-rounded course, remarkable location and a finish line on the Promenade des Anglais - one of the most iconic locations in French triathlon." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-france2.png'/>" data-event-products="" data-button-label="More Info" filter-one="JUN" filter two="FR" filter-three="HI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">June 26th 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman 70.3 Nice</h2>
+								<h4>Nice, France</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Ocean</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Hilly</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Flat</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Event Item 20 -->
+					<li class="event-item" data-id="20" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="82° F / 28° C" data-stat-four-label="Avg. Air Temp" data-stat-five="75° F / 24° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-france.png);" data-full-date="June 26th 2022" data-event-title="IRONMAN Nice" data-event-sub="FRANCE" data-event-description="Experience one of Europe's premier triathlon playgrounds as you race from the the Mediterranean to the mountains in the glamourous French riviera city of Nice. Marvel at the beautiful old town architecture and azure coastline and enjoy a memorable French race-cation after finishing France's most iconic triathlon" data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-france.png'/>" data-event-products="" data-button-label="More Info" filter-one="JUN" filter two="FR" filter-three="FI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">June 26th 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman Nice</h2>
+								<h4>Nice, France</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Ocean</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Hilly</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Flat</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Event Item 21 -->
+					<li class="event-item" data-id="21" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Rolling" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="75° F / 24° C" data-stat-four-label="Avg. Air Temp" data-stat-five="66° F / 19° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="July 3rd 2022" data-event-title="IRONMAN 70.3 LES SABLES D'OLONNE-VENDĖE" data-event-sub="FRANCE" data-event-description="Les Sables d'Olonne, translated as "the sands of Olonne", is a seaside town on the western French coast, the Côte de Lumière. The region features a stunning array of landscapes, from picturesque beaches and jagged coastlines to pine forests and wetlands. After the inaugural race in 2019, the canal swim, bike through the forest, and half-marathon along Les Remblai promenade has made IRONMAN 70.3 Les Sables d'Olonne an instant sensation." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="JUL" filter two="FR" filter-three="HI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">July 3rd 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman 70.3 Les Sables d'Olonne-Venée</h2>
+								<h4>Vendée, France</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Ocean</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Rolling</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Flat</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Event Item 22 -->
+					<li class="event-item" data-id="22" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="83° F / 28° C" data-stat-four-label="Avg. Air Temp" data-stat-five="77° F / 25° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="August 20th 2022" data-event-title="IRONMAN 70.3 VICHY" data-event-sub="FRANCE" data-event-description="Tree-lined boulevards laid out in the 19th century, and art-deco buildings such as the Opéra de Vichy, add to the town’s nostalgic feel.  Swim in the beautiful lake of the Allier, bike through the magnificent and varied landscapes of the Montagne Bourbonnaise and Volcanoes of Auvergne, and run along the banks and the old town." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="AUG" filter two="FR" filter-three="HI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">August 20th 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman 70.3 Vichy</h2>
+								<h4>Vichy, France</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Lake</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Hilly</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Flat</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Event Item 23 -->
+					<li class="event-item" data-id="23" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="83° F / 28° C" data-stat-four-label="Avg. Air Temp" data-stat-five="77° F / 25° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="August 21st 2022" data-event-title="IRONMAN VICHY" data-event-sub="FRANCE" data-event-description="Vichy, known as the Queen of Spa Towns, offers a double-race weekend and one of the best finish line parties on the circuit. Tree-lined boulevards laid out in the 19th century, and art-deco buildings such as the Opéra de Vichy, add to the town’s nostalgic feel.  This elegant and well-known city is the perfect host for swimming, cycling, running and finally relaxing thanks to its' many spas. Most of the time, this is a warm water race, and on top of that this full distance event features a challenging bike course and beautiful run along the waterways of the city." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="AUG" filter two="FR" filter-three="FI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">August 21st 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman Vichy</h2>
+								<h4>Vichy, France</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Lake</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Hilly</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Flat</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Event Item 24 -->
+					<li class="event-item" data-id="24" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Rolling" data-stat-three-label="RUN" data-stat-four="72° F / 22° C" data-stat-four-label="Avg. Air Temp" data-stat-five="73° F / 23° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="May 29th 2022" data-event-title="IRONMAN 70.3 KRAICHGAU" data-event-sub="Germany" data-event-description="Known as the land of 1,000 hills, the Kraichgau region offers beautiful scenery, a challenging course, and a deep triathlon culture. The landscape's constantly changing scenery from woodlands, to vineyards and orchards create a peaceful contrast to the thousands of spectators along the course at this energetic race." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="MAY" filter two="GER" filter-three="HI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">May 29th 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman 70.3 Kraichagu</h2>
+								<h4>Kraichgau, Ubstadt-Weiher, Germany</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Lake</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Hilly</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Rolling</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+					<!-- Event Item 25 -->
+					<li class="event-item" data-id="25" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Rolling" data-stat-three-label="RUN" data-stat-four="72° F / 22° C" data-stat-four-label="Avg. Air Temp" data-stat-five="73° F / 23° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="May 29th 2022" data-event-title="5150 TRIATHLON SERIES KRAICHGAU" data-event-sub="GER" data-event-description="The 5150 Kraichgau is the standard distance race under the umbrella of the IRONMAN 70.3 Kraichgau powered by KraichgauEnergie. Taking place on the legendary middle-distance course, in an incredibly beautiful landscape, the race fuses an exciting challenge with the energy of thousands of enthusiastic spectators." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="MAY" filter two="GER" filter-three="O">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">May 29th 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>5150 Triathlon Series Kraichagu</h2>
+								<h4>Kraichgau, Ubstadt-Weiher, Germany</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Lake</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Hilly</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Rolling</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+	
+					<!-- Event Item 26 -->
+					<li class="event-item" data-id="26" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Flat" data-stat-two-label="BIKE" data-stat-three="Rolling" data-stat-three-label="RUN" data-stat-four="73° F / 23° C" data-stat-four-label="Avg. Air Temp" data-stat-five="70° F / 21° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="June 5th 2022" data-event-title="IRONMAN CHAMPIONSHIP HAMBURG" data-event-sub="Germany" data-event-description="Anchors aweigh - race in Germany's triathlon capital. Hamburg is a bustling metropolis and harbour city and also one of Europe's greenest cities. Known as the Home Port of Triathlon, this dynamic event features an unforgettable finish at the famous Town Hall market square." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="JUN" filter two="GER" filter-three="FI">
+						<div class="data-item-container">
+							<div class="image" style="{{item-image}}">
+								<div class="date">June 5th 2022</div>
+							</div>
+							<div class="event-header">
+								<h2>Ironman Championship Hamburg</h2>
+								<h4>Hamburg, Germany</h4>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<span class="label">Swim</span>
+										<span class="value">Lake</span>
+									</li>
+									<li>
+										<span class="label">Bike</span>
+										<span class="value">Flat</span>
+									</li>
+									<li>
+										<span class="label">Run</span>
+										<span class="value">Rolling</span>
+									</li>
+								</ul>
+								<div class="buttons">
+									<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				  
+				  <!-- Event Item 27 -->
+				  <li class="event-item" data-id="27" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Rolling" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="77° F / 25° C" data-stat-four-label="Avg. Air Temp" data-stat-five="73° F / 23° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="June 26th 2022" data-event-title="IRONMAN CHAMPIONSHIP FRANKFURT" data-event-sub="Germany" data-event-description="Germany's urban playground along the banks of the Main river, Frankfurt am Main, offers the destination for the triathlon showdown of the year.  The world's top pro male athletes race alongside age groupers on a course showcasing the region's traditional villages and landscapes, culminating in a finish line on the historic Römerberg." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="JUN" filter two="GER" filter-three="FI">
+					  <div class="data-item-container">
+						  <div class="image" style="{{item-image}}">
+							  <div class="date">June 26th 2022</div>
+						  </div>
+						  <div class="event-header">
+							  <h2>Ironman Championship Frankfurt</h2>
+							  <h4>Frankfurt, Germany</h4>
+						  </div>
+						  <div class="stats">
+							  <ul>
+								  <li>
+									  <span class="label">Swim</span>
+									  <span class="value">Lake</span>
+								  </li>
+								  <li>
+									  <span class="label">Bike</span>
+									  <span class="value">Rolling</span>
+								  </li>
+								  <li>
+									  <span class="label">Run</span>
+									  <span class="value">Flat</span>
+								  </li>
+							  </ul>
+							  <div class="buttons">
+								  <div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+							  </div>
+						  </div>
+					  </div>
+				  </li>
+					
+					<!-- Event Item 28 -->
+					  <li class="event-item" data-id="28" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Rolling" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="77° F / 25° C" data-stat-four-label="Avg. Air Temp" data-stat-five="73° F / 23° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="June 26th 2022" data-event-title="IRONMAN CHAMPIONSHIP FRANKFURT" data-event-sub="Germany" data-event-description="Germany's urban playground along the banks of the Main river, Frankfurt am Main, offers the destination for the triathlon showdown of the year.  The world's top pro male athletes race alongside age groupers on a course showcasing the region's traditional villages and landscapes, culminating in a finish line on the historic Römerberg." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="JUN" filter two="GER" filter-three="FI">
+						  <div class="data-item-container">
+							  <div class="image" style="{{item-image}}">
+								  <div class="date">June 26th 2022</div>
+							  </div>
+							  <div class="event-header">
+								  <h2>Ironman Championship Frankfurt</h2>
+								  <h4>Frankfurt, Germany</h4>
+							  </div>
+							  <div class="stats">
+								  <ul>
+									  <li>
+										  <span class="label">Swim</span>
+										  <span class="value">Lake</span>
+									  </li>
+									  <li>
+										  <span class="label">Bike</span>
+										  <span class="value">Rolling</span>
+									  </li>
+									  <li>
+										  <span class="label">Run</span>
+										  <span class="value">Flat</span>
+									  </li>
+								  </ul>
+								  <div class="buttons">
+									  <div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+								  </div>
+							  </div>
+						  </div>
+					  </li>
+					  
+					  <!-- Event Item 29 -->
+						<li class="event-item" data-id="29" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Rolling" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="77° F / 25° C" data-stat-four-label="Avg. Air Temp" data-stat-five="70° F / 21° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="July 31st 2022" data-event-title="IRONMAN 70.3 DRESDEN" data-event-sub="Germany" data-event-description="First mentioned more than 800 years ago, Dresden is now home to more than half a million people. Every square metre of the capital of the eastern German state of Saxony is steeped in history. Dresden offers a breathtaking mix of meticulously reconstructed historical buildings, that rose from the ashes of World War II – and is considered as 'Florence of the North'. Athletes should be prepared for a flair of the dramatic as they cross the finish line, located right in front of one of Europe’s most famous opera houses, the Semperoper." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="JUL" filter two="GER" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">July 31st 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Dresden</h2>
+									<h4>Dresden, Germany</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Lake</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Rolling</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+	
+						<!-- Event Item 30 -->
+						<li class="event-item" data-id="30" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Rolling" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="77° F / 25° C" data-stat-four-label="Avg. Air Temp" data-stat-five="70° F / 21° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="August 28th 2022" data-event-title="IRONMAN 70.3 DUISBURG" data-event-sub="Germany" data-event-description="Nestled in the Ruhr metropolitan area of the northwestern German state, North Rhine-Westphalia, the city of Duisburg is perched at the confluence of the Rhine and Ruhr rivers. Home to the world's largest inland port, with 21 docks and 40 kilometres of wharf, the city has become a hotbed for cultural festivals, inspiring events, amusement parks and idyllic lake landscapes. Finish the race in the 'Schauinsland-Reisen-Arena' home to the MSV Duisburg football club, also known as 'Die Zebras'. " data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="AUG" filter two="GER" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">August 28th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Duisburg</h2>
+									<h4>Duisburg, Germany</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Lake</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Rolling</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 31 -->
+						<li class="event-item" data-id="31" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Flat" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="73° F / 23° C" data-stat-four-label="Avg. Air Temp" data-stat-five="68° F / 20° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="September 10th 2022" data-event-title="5150 TRIATHLON SERIES ERKNER" data-event-sub="Germany" data-event-description="Erkner is located on the southeastern edge of the capital Berlin in the state Brandenburg.  The small charming town with 12.000 inhabitants is a popular destination for many metropolitan to escape the hustle and bustle of the big city." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="SEP" filter two="GER" filter-three="O">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">September 10th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>5150 Triathlon Series Erkner</h2>
+									<h4>Erkner, Germany</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Lake</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Flat</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+							
+						<!-- Event Item 32 -->
+						<li class="event-item" data-id="32" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Flat" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="73° F / 23° C" data-stat-four-label="Avg. Air Temp" data-stat-five="68° F / 20° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="September 11th 2022" data-event-title="IRONMAN 70.3 ERKNER" data-event-sub="Germany" data-event-description="Erkner is located on the southeastern edge of the capital Berlin in the state Brandenburg.  The small charming town with 12.000 inhabitants is a popular destination for many metropolitan to escape the hustle and bustle of the big city. Athletes will experience a race between the woods and waters of the lakeland Oder-Spree." data-event-description-image="<img src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="SEP" filter two="GER" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">September 11th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Erkner</h2>
+									<h4>Erkner, Germany</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Lake</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Flat</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					
+						<!-- Event Item 33 -->
+						<li class="event-item" data-id="33" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Flat" data-stat-two-label="BIKE" data-stat-three="Rolling" data-stat-three-label="RUN" data-stat-four="73° F / 23° C" data-stat-four-label="Avg. Air Temp" data-stat-five="72° F / 22° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="October 23rd 2022" 	data-event-title="IRONMAN 70.3 VOULIAGMENI, GREECE" data-event-sub="Greece" data-event-description="Enjoy the mild weather of the Athenian Fall, in the scenic area of the Athens Riviera, the magnificent, worldwide famous Vouliagmeni seaside town. Located 20km from the cultural center of Athens, the trip to IRONMAN 70.3 Vouliagmeni, Greece  offers the opportunity to indulge in the historic treasures of Athens, surrender to the glamorous seaside surroundings of Vouliagmeni, relish the taste of Mediterranean localities and enjoy the luxury of the most popular destination of the Attica region. Register for a swimming experience in crystal clear bay serene waters, a biking challenge in a rolling coastal breathtaking course, viewing the Ancient Temple of Poseidon, a running course towards the spectacular Lake Vouliagmeni, a real treasure of the Greek nature, with yearly warm waters and healing properties." 	data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="OCT" filter two="GR" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">October 23rd 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Vouliagmeni, Greece</h2>
+									<h4>Vouliagmeni Athens, Greece</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Ocean</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Flat</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Rolling</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					
+						<!-- Event Item 34 -->
+						<li class="event-item" data-id="34" data-stat-one="Bay" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="65° F / 18° C" data-stat-four-label="Avg. Air Temp" data-stat-five="59° F / 15° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="August 13th 2022" 	data-event-title="IRONMAN 70.3 IRELAND, CORK" data-event-sub="Ireland" data-event-description="Find out why so many athletes are enamoured by County Cork and the people of Youghal.  Enjoy being welcomed like a local in the beautiful south coast of Ireland where the scenic views and the vibrant culture thrives in this stunning setting." 	data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="AUG" filter two="IE" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">August 13th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Ireland, Cork</h2>
+									<h4>Youghal/Cork Ireland</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Bay</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Hilly</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 35 -->
+						<li class="event-item" data-id="35" data-stat-one="Bay" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="65° F / 18° C" data-stat-four-label="Avg. Air Temp" data-stat-five="59° F / 15° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="August 14th 2022" 	data-event-title="IRONMAN IRELAND, CORK" data-event-sub="Ireland" data-event-description="County Cork and the town of Youghal combines Ireland’s fabled natural beauty, a convenient racing location and a well-balanced course to deliver an IRONMAN Festival weekend on the Emerald Isle.  Take on the challenging courses of this authentically Irish IRONMAN race, soak up the atmosphere of its buzzing crowd support from friendly locals and unwind in this charming seaside town teeming with tangible historic character and curiosity." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="AUG" filter two="IE" filter-three="FI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">August 14th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman Ireland, Cork</h2>
+									<h4>Youghal/Cork Ireland</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Bay</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Hilly</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 36 -->
+						<li class="event-item" data-id="36" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Flat" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="77° F / 25° C" data-stat-four-label="Avg. Air Temp" data-stat-five="72° F / 22° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="September 17th 2022" 	data-event-title="IRONMAN ITALY, EMILIA-ROMAGNA" data-event-sub="Italy" data-event-description="The ancient fishing village of Cervia hosts the first Made-in-Italy IRONMAN, a spectacular race that takes place along the coastal Emilia-Romagna region flanked by the Adriatic Sea. Swim, bike and run through Emilia-Romagna's historic scenery." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="SEPT" filter two="IT" filter-three="FI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">September 17th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman Italy, Emilia-Romagna</h2>
+									<h4>Emilia-Romagna, Italy</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Ocean</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Flat</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 37 -->
+						<li class="event-item" data-id="37" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Flat" data-stat-two-label="BIKE" data-stat-three="Rolling" data-stat-three-label="RUN" data-stat-four="77° F / 25° C" data-stat-four-label="Avg. Air Temp" data-stat-five="72° F / 22° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="September 18th 2022" 	data-event-title="IRONMAN 70.3 ITALY, EMILIA-ROMAGNA" data-event-sub="Italy" data-event-description="One of the eastern Italy's most popular beach resorts, Cervia, located in the region of Emilia-Romagna in Italy, hosts an end of season spectacle thanks to the IRONMAN and IRONMAN 70.3 Emilia-Romagna race weekend.  With its first edition held in 2019, the IRONMAN 70.3 Emilia-Romagna course featuring rolling countryside and historic city centre highlights, became an instant hit and a must-do on the calendar." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="SEPT" filter two="IT" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">September 18th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Italy, Emilia-Romagna</h2>
+									<h4>Emilia-Romagna, Italy</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Ocean</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Flat</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Rolling</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 38 -->
+						<li class="event-item" data-id="38" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Flat" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="68° F / 20° C" data-stat-four-label="Avg. Air Temp" data-stat-five="62° F / 17° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="September 18th 2022" 	data-event-title="5150 TRIATHLON SERIES CERVIA" data-event-sub="Italy" data-event-description="On the coast of Emilia-Romagna—one of the most famous Italian regions in the world for nature, art, and food just 20 km from Ravenna—sits Cervia. This ancient fishing village, nicknamed the City of Salt, became known during the Roman Empire for its fine sand and wide centuries-old pinewood. In the 1800s, Cervia became an important tourist destination, and in 1912, the garden city of Milano Maritttima was created, quickly becoming one of the most glamorous seaside towns in Italy." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="SEPT" filter two="IT" filter-three="O">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">September 18th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>5150 Triathlon Series Cervia</h2>
+									<h4>Emilia-Romagna, Italy</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Ocean</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Flat</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+							
+						<!-- Event Item 39 -->
+						<li class="event-item" data-id="39" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Flat" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="70° F / 21° C" data-stat-four-label="Avg. Air Temp" data-stat-five="63° F / 17° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="September 25th 2022" 	data-event-title="IRONMAN 70.3 VENICE-JESOLO" data-event-sub="Italy" data-event-description="From one of the world’s most powerful historic trade hubs to the modern icon considered the world’s most romantic destination, the Floating City of Venice and the Adriatic seaside retreat of Jesolo, adds an exciting piece to its rich tapestry as it gets ready to welcome glory seekers whose journey takes the form of swim, bike and run." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="SEPT" filter two="IT" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">September 25th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Venice-Jesolo</h2>
+									<h4>Jesolo, Italy</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Ocean</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Flat</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>				
+						
+						<!-- Event Item 40 -->
+						<li class="event-item" data-id="40" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="68° F / 20° C" data-stat-four-label="Avg. Air Temp" data-stat-five="66° F / 19° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="October 23rd 2022" 	data-event-title="IRONMAN 70.3 SARDENGA" data-event-sub="Italy" data-event-description="One of the most beautiful coastal areas in Sardinia, Santa Margherita di Pula on the island of Sardinia, Italy, is a dream holiday destination.  Miles of white sandy beaches, crystal clear waters and an oasis of relaxation at luxury resorts.  Get lost in the charm of the Sardegna region with its strong cultural heritage and post card sights. " data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="OCT" filter two="IT" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">October 23rd 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Sardenga</h2>
+									<h4>Sardinia, Italy</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Ocean</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Hilly</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>	
+						
+						<!-- Event Item 41 -->
+						<li class="event-item" data-id="41" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="68° F / 20° C" data-stat-four-label="Avg. Air Temp" data-stat-five="66° F / 19° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="June 19th 2022" 	data-event-title="IRONMAN 70.3 LUXEMBOURG - REGION MOSELLE" data-event-sub="Luxembourg" data-event-description="Located in the heart of Europe, this unique race offers athletes a chance to swim in Germany, bike in France, and run in Luxembourg. Also a world-class wine-growing region, the Moselle Valley is a center for endless gastronomic and recreational discoveries." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="JUN" filter two="LU" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">June 19th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Luxembourg - Region Moselle</h2>
+									<h4>Region Moselle, Luxembourg</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">River</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Rolling</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>	
+	
+						<!-- Event Item 42 -->
+						<li class="event-item" data-id="42" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Flat" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="68° F / 20° C" data-stat-four-label="Avg. Air Temp" data-stat-five="63° F / 17° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="June 25th 2022" 	data-event-title="5150 TRIATHLON SERIES WESTFRIESLAND" data-event-sub="Netherlands" data-event-description="An intriguing, intrinsically Dutch region just north of Amsterdam, flanked by water and beautiful countryside; this is the region of Westfriesland. Pircturesque villages and pretty towns, this race is one of Europe's best active weekend escapes." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="JUN" filter two="NL" filter-three="O">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">June 25th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>5150 Triathlon Series Westfriesland</h2>
+									<h4>Westfroesland, Netherlands</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Lake</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Flat</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>	
+						
+						<!-- Event Item 43 -->
+						<li class="event-item" data-id="43" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Flat" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="68° F / 20° C" data-stat-four-label="Avg. Air Temp" data-stat-five="63° F / 17° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="June 26th 2022" 	data-event-title="IRONMAN 70.3 WESTFRIESLAND" data-event-sub="Netherlands" data-event-description="The region of Westfriesland is simply the best Holland has to offer. The landscape is dotted with windmills, polders, and historic and modern villages against a pastoral backdrop. The course exudes the character of the region with historic city centres, dykes and green countryside." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="JUN" filter two="NL" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">June 26th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Westfriesland</h2>
+									<h4>Westfriesland, Netherlands</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Lake</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Flat</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 45 -->
+						<li class="event-item" data-id="44" data-stat-one="River" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="77° F / 25° C" data-stat-four-label="Avg. Air Temp" data-stat-five="68° F / 20° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="August 6th 2022" 	data-event-title="IRONMAN 70.3 MAASRICHT" data-event-sub="Netherlands" data-event-description="Maastricht is one of the most iconic cities in The Netherlands. With a great ambience and many spectator hotspots, Maastricht is the ideal place for an IRONMAN 70.3 and guarantees a unique experience for both athletes and spectators. With beautiful scenery in and around the city, this race location is a favorite for many IRONMAN athletes." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="AUG" filter two="NL" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">August 6th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Maastricht-Limburg</h2>
+									<h4>Maastricht, Netherlands</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">River</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Hilly</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 45 -->
+						<li class="event-item" data-id="45" data-stat-one="River" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="77° F / 25° C" data-stat-four-label="Avg. Air Temp" data-stat-five="68° F / 20° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="August 7th 2022" 	data-event-title="IRONMAN Maastricht" data-event-sub="Netherlands" data-event-description="After a three-year hiatus, the IRONMAN Maastricht - Limburg is back!  Featuring a swim in the Maas river, an all-new bike course taking in the best of the South Limburg landscape, and a fan-favourite run course through the heart of the city, IRONMAN Maastricht - Limburg brings IRONMAN® racing back to The Netherlands with a bang in 2022. Enjoy the ultimate triathlon festival weekend in one of the oldest cities in The Netherlands then celebrate your achievements with an extended tour of Maastricht’s many cultural and gastronomical delights." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="AUG" filter two="NL" filter-three="FI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">August 7th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman Maastricht-Limburg</h2>
+									<h4>Maastricht, Netherlands</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">River</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Hilly</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 46 -->
+						<li class="event-item" data-id="46" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Rolling" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="64° F / 18° C" data-stat-four-label="Avg. Air Temp" data-stat-five="62° F / 17° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="July 3rd 2022" 	data-event-title="IRONMAN 70.3 SANDNES" data-event-sub="Norway" data-event-description="Visit this unique landscape where the contrasts are large. With the ever-changing light that has inspired artists since the dawn of time, mountains, beaches and fjords in majestic harmony. Sandnes is a fully-serviced city a short distance south of Stavanger, and a short ride from Stavanger airport." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="JUL" filter two="NO" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">July 3rd 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Sandnes</h2>
+									<h4>Sandnes, Norway</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Ocean</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Rolling</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 47 -->
+						<li class="event-item" data-id="47" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Flat" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="73° F / 23° C" data-stat-four-label="Avg. Air Temp" data-stat-five="65° F / 18° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="June 12th 2022" 	data-event-title="IRONMAN 70.3 WARSAW" data-event-sub="Poland" data-event-description="The unshaken spirit of Warsaw has seen many historic battles. Now, it is going to see IRONMAN 70.3 athletes taking on the swim, bike, run in the heart of the city. Poland's largest city is dynamic, rich in culture and history, with open-minded people, as well as great nightlife. A unique destination for a quick city-break with exciting IRONMAN racing included. " data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="JUN" filter two="Poland" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">June 12th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Warsaw</h2>
+									<h4>Warsaw, Poland</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Lake</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Flat</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 48 -->
+						<li class="event-item" data-id="48" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Flat" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="73° F / 23° C" data-stat-four-label="Avg. Air Temp" data-stat-five="65° F / 18° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="June 12th 2022" 	data-event-title="5150 TRIATHLON SERIES WARSAW" data-event-sub="Poland" data-event-description="A swim, bike and run in the vibrant Polish capital. Warsaw is a dynamic city, rich in culture and history with open-minded people, as well as great nightlife. A destination uniquely setup to invite exciting racing and off-the-course exploration." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="JUN" filter two="Poland" filter-three="O">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">June 12th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>5150 Triathlon Series Warsaw</h2>
+									<h4>Warsaw, Poland</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Lake</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Flat</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 49 -->
+						<li class="event-item" data-id="49" data-stat-one="Bay" data-stat-one-label="SWIM" data-stat-two="Rolling" data-stat-two-label="BIKE" data-stat-three="Rolling" data-stat-three-label="RUN" data-stat-four="77° F / 25° C" data-stat-four-label="Avg. Air Temp" data-stat-five="66° F / 19° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="August 7th 2022" 	data-event-title="IRONMAN GDYNIA" data-event-sub="Poland" data-event-description="Gdynia loves triathlon, says a giant banner hanging on the wall of the Gdynia Aquarium,  displayed at the transition zone during race week.  But it is more than just a banner - Gdynia really loves and lives triathlon. Our enthusiastic community cannot wait to welcome IRONMAN athletes again - this time for the legendary full distance race. Late evening, finishing on a sandy beach, lights, music and You are an IRONMAN shouted by the announcers...  Goosebumps!" data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="AUG" filter two="Poland" filter-three="FI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">August 7th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman Gdynia</h2>
+									<h4>Gdynia, Poland</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Bay</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Rolling</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Rolling</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 50 -->
+						<li class="event-item" data-id="50" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Flat" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="73° F / 23° C" data-stat-four-label="Avg. Air Temp" data-stat-five="65° F / 18° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="September 4th 2022" 	data-event-title="IRONMAN 70.3 POZNAN" data-event-sub="Poland" data-event-description="Feel the history of Polish triathlon swimming in the Lake Kierskie - the venue of the first ever triathlon competition in the country held in 1984. A flat bike will take you closer to the city centre while the finish and the entire IRONMAN Village will be located in the Poznań International Fair - one of the modern landmarks of the city." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="SEP" filter two="Poland" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">September 4th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Poznan</h2>
+									<h4>Poznan, Poland</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Lake</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Flat</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 51 -->
+						<li class="event-item" data-id="51" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Flat" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="73° F / 23° C" data-stat-four-label="Avg. Air Temp" data-stat-five="65° F / 18° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="September 4th 2022" 	data-event-title="5150 TRIATHLON SERIES POZNAN" data-event-sub="Poland" data-event-description="Racing in the capital city of the Greater Poland area will make you feel the history of Polish triathlon and see the modern face of Poznań" data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="SEP" filter two="Poland" filter-three="O">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">September 4th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>5150 Triathlon Series Poznan</h2>
+									<h4>Poznan, Poland</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Lake</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Flat</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 52 -->
+						<li class="event-item" data-id="52" data-stat-one="Bay" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Rolling" data-stat-three-label="RUN" data-stat-four="65° F / 18° C" data-stat-four-label="Avg. Air Temp" data-stat-five="62° F / 17° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="October 15th 2022" 	data-event-title="IRONMAN PORTUGAL - CASCAIS" data-event-sub="Portugal" data-event-description="The nation of historic naval pioneers welcomes the world to Portugal’s second full-distance IRONMAN race in the breathtaking Atlantic coastal town of Cascais. Historic houses, palaces, and fortresses of bygone times over one of the most beautiful race courses ever designed for a triathlon." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="OCT" filter two="PT" filter-three="FI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">October 15th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman Portugal - Cascais</h2>
+									<h4>Cascais, Portugal</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Bay</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Hilly</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Rolling</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 53 -->
+						<li class="event-item" data-id="53" data-stat-one="Bay" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Rolling" data-stat-three-label="RUN" data-stat-four="65° F / 18° C" data-stat-four-label="Avg. Air Temp" data-stat-five="62° F / 17° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="October 16th 2022" 	data-event-title="IRONMAN 70.3 PORTUGAL - CASCAIS" data-event-sub="Portugal" data-event-description="With its mild climate and 3,000 hours of sunshine per year, Portugal has long been a prime destination for family holidays. Thanks to a bumper IRONMAN weekend including an IRONMAN and IRONMAN 70.3 distance event, athletes can experience the best Cascais has to offer, starting with a swim in the most spectacular bay in Portugal. Follow up your race with a few days in Lisbon to complete your Portuguese adventure." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="OCT" filter two="PT" filter-three="FI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">October 16th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Portugal - Cascais</h2>
+									<h4>Cascais, Portugal</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Bay</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Hilly</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Rolling</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+												
+						<!-- Event Item 54 -->
+						<li class="event-item" data-id="54" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Rolling" data-stat-three-label="RUN" data-stat-four="80° F / 27° C" data-stat-four-label="Avg. Air Temp" data-stat-five="72° F / 22° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="March 19th 2022" 	data-event-title="IRONMAN 70.3 LANZAROTE" data-event-sub="Spain" data-event-description="Not far from the northwest coast of Africa, the IRONMAN 70.3 Lanzarote boasts a breath-taking course that takes place in some of the most spectacular scenery in Europe. Years of constant eruptions created a lunar landscape, unique in Europe, where athletes will experience racing in a venue never discovered before. The race venue Playa Blanca is in the south side of Lanzarote." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="MAR" filter two="ESP" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">March 19th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Lanzarote</h2>
+									<h4>Lanzarote, Spain</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Ocean</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Hilly</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Rolling</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 55 -->
+						<li class="event-item" data-id="55" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="77° F / 25° C" data-stat-four-label="Avg. Air Temp" data-stat-five="63° F / 17° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="May 7th 2022" 	data-event-title="IRONMAN 70.3 ALCUDIA-MALLORCA" data-event-sub="Spain" data-event-description="Fancy a beautiful course through scenic Spanish island villages and sweeping ocean views? The balearic island of Mallorca is not only a training paradise for triathletes from around the world, but also host to one of the largest IRONMAN 70.3 events in the world, the Zafiro IRONMAN 70.3 Alcúdia-Mallorca. A fast course in magnificent sunny Mallorca, this race has been a global favourite for over a decade." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="MAY" filter two="ESP" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">May 7th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Alcudia-Mallorca</h2>
+									<h4>Alcudia Mallorca, Spain</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Ocean</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Hilly</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 56 -->
+						<li class="event-item" data-id="56" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="77° F / 25° C" data-stat-four-label="Avg. Air Temp" data-stat-five="63° F / 17° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="May 7th 2022" 	data-event-title="IRONMAN MALLORCA" data-event-sub="Spain" data-event-description="Discover the island where swim, bike, run is a true celebration. Be energised by the clear waters of the Mediterranean, be enchanted by the sweeping views and be taken in by the unique Mallorcan welcome where the red carpet is rolled out for chasers of the iconic finish line." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="MAY" filter two="ESP" filter-three="FI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">May 7th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman Mallorca</h2>
+									<h4>Alcudia Mallorca, Spain</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Ocean</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Hilly</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 57 -->
+						<li class="event-item" data-id="57" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="82° F / 28° C" data-stat-four-label="Avg. Air Temp" data-stat-five="64° F / 18° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="May 21st 2022" 	data-event-title="IRONMAN LANZAROTE" data-event-sub="Spain" data-event-description="IRONMAN Lanzarote is one of the longest-standing races in Europe. A Unesco biosphere reserve, Lanzarote is a captivating island with 300 volcanic cones. Stark landscapes reminiscent of the black lava fields of Kona are intermingled with tropical beachside scenes. " data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="MAY" filter two="ESP" filter-three="FI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">May 21st 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman Lanzarote</h2>
+									<h4>Lanzarote, Spain</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Ocean</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Hilly</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 58 -->
+						<li class="event-item" data-id="58" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="70° F / 21° C" data-stat-four-label="Avg. Air Temp" data-stat-five="61° F / 16° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="May 22nd 2022" 	data-event-title="IRONMAN 70.3 MARBELLA" data-event-sub="Spain" data-event-description="Flanked by the ocean and the mountains, Marbella is one of the most beautiful locations in Spain. This Andalusian city is a spectacular host for athletes and supporters, thanks to a dynamic course paired with perfect climate and Mediterranean seafront promenade views." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="MAY" filter two="ESP" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">May 22nd 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Marbella</h2>
+									<h4>Marbella, Spain</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Ocean</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Hilly</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 59 -->
+						<li class="event-item" data-id="59" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Rolling" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="72° F / 22° C" data-stat-four-label="Avg. Air Temp" data-stat-five="70° F / 21° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="July 10th 2022" 	data-event-title="IRONMAN VITORIA-GASTEIZ" data-event-sub="Spain" data-event-description="IRONMAN Vitoria-Gasteiz invites you to the spectacular cultural capital of northern Spain's Basque Country, province of Álava! With over a decade of triathlon heritage, Vitoria-Gasteiz is a well-known triathlon playground offering astonishing natural landscapes, rich culture, unforgettable Basque gastronomy, and passionate and vibrant people." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="JUL" filter two="ESP" filter-three="FI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">July 10th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman Vitoria-Gasteiz</h2>
+									<h4>Vitoria-Gasteiz, Spain</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Lake</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Rolling</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 60 -->
+						<li class="event-item" data-id="60" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Flat" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="77° F / 25° C" data-stat-four-label="Avg. Air Temp" data-stat-five="63° F / 17° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="October 2nd 2022" 	data-event-title="IRONMAN 70.3 BARCELONA" data-event-sub="Spain" data-event-description="Known for its beautiful location at the Costa del Maresme and its distinctive lighthouse landmark, Calella is a tourism and sport hotspot. Its golden beaches and mild climate offers a playground for triathlon enthusiasts, with the race offering a great late season challenge thanks to its beautiful sea swim, a flat and fast bike course, and a flat run course along the Calella beachfront." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="OCT" filter two="ESP" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">October 2nd 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Barcelona</h2>
+									<h4>Barcelona, Spain</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Ocean</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Flat</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 61 -->
+						<li class="event-item" data-id="61" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Flat" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="75° F / 24° C" data-stat-four-label="Avg. Air Temp" data-stat-five="72° F / 22° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="October 2nd 2022" 	data-event-title="IRONMAN BARCELONA" data-event-sub="Spain" data-event-description="The village of Calella of the Barcelona-Maresme region, on Spain’s eastern coastline on the Mediterranean Sea, hosts the most popular end of season race in Europe.  A sea swim in the bay, a fast bike course and a flat run, this race has clocked sub-8 hour times making it a sure-fire personal best course. Wrapped up in Spanish sunshine with a finish line on the beach and a spirited after party, IRONMAN Barcelona is a European series winner." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="OCT" filter two="ESP" filter-three="FI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">October 2nd 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman Barcelona</h2>
+									<h4>Barcelona, Spain</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Ocean</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Flat</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 62 -->
+						<li class="event-item" data-id="62" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Rolling" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="72° F / 22° C" data-stat-four-label="Avg. Air Temp" data-stat-five="68° F / 20° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="July 10th 2022" 	data-event-title="IRONMAN 70.3 JONKOPING EUROPEAN TRICLUB CHAMPIONSHIP" data-event-sub="Sweden" data-event-description="The crystal-clear lake Vättern provides a stunning center point for this race, launching athletes into enchanting forests and expansive views over the Swedish countryside. Most notably captured by fairy-tale artist John Bauer, Jönköping's landscape has a sprinkling of magic. Designated a UNESCO biosphere reserve, the area features a total of nine lakes, which athletes will enjoy on the swim, bike, and run courses." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="JUL" filter two="SE" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">July 10th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Jonkoping European TriClub Championship</h2>
+									<h4>Jonkoping, Sweden</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Lake</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Rolling</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 63 -->
+						<li class="event-item" data-id="63" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Flat" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="71° F / 22° C" data-stat-four-label="Avg. Air Temp" data-stat-five="68° F / 20° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="August 20th 2022" 	data-event-title="IRONMAN KALMAR" data-event-sub="Sweden" data-event-description="The marvel of the Scandinavian landscape is on display at every turn in this, the most recommended IRONMAN race in the world.  Traverse the Baltic Sea and the iconic 6km long bridge to the island of Öland on the bike course, and celebrate your achievement at Europe's biggest IRONMAN finish line party." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="AUG" filter two="SE" filter-three="FI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">August 20th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman Kalmar</h2>
+									<h4>Kalmar, Sweden</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Ocean</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Flat</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 64 -->
+						<li class="event-item" data-id="64" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Rolling" data-stat-three-label="RUN" data-stat-four="68° F / 20° C" data-stat-four-label="Avg. Air Temp" data-stat-five="63° F / 17° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="June 19th 2022" 	data-event-title="IRONMAN 70.3 SWITZERLAND" data-event-sub="Switzerland" data-event-description="The city of Rapperswil-Jona with its gorgeous leisure district and inviting Riviera has been the host city of the IRONMAN 70.3 Switzerland dating back to 2007. It is no coincidence that over the years the city of roses has welcomed thousands to this exciting event; with its numerous attractions and perfectly integrated public transport system, the city is an ideal destination for visitors." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="JUN" filter two="CH" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">June 19th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Switzerland</h2>
+									<h4>Rapperswil-Jona, Switzerland</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Lake</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Hilly</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Rolling</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+	
+						<!-- Event Item 65 -->
+						<li class="event-item" data-id="65" data-stat-one="Lake" data-stat-one-label="SWIM" data-stat-two="Hilly" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="68° F / 20° C" data-stat-four-label="Avg. Air Temp" data-stat-five="63° F / 17° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="July 10th 2022" 	data-event-title="IRONMAN SWITZERLAND" data-event-sub="Switzerland" data-event-description="The majestic Alps - reflected in the pristine waters of Lake Thun - welcomes athletes to Thun, the new home of IRONMAN Switzerland. This race took place in Zurich for 23 years before moving to its new home, a celebration of the Swiss mountain culture and landscape. Spot the three famous peaks Eiger, Mönch & Jungfrau right from the event site and marvel at the beauty of this otherworldly landscape." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="JUL" filter two="CH" filter-three="FI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">July 10th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman Switzerland - Thun</h2>
+									<h4>Thun, Switzerland</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Lake</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Hilly</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<!-- Event Item 66 -->
+						<li class="event-item" data-id="66" data-stat-one="Ocean" data-stat-one-label="SWIM" data-stat-two="Flat" data-stat-two-label="BIKE" data-stat-three="Flat" data-stat-three-label="RUN" data-stat-four="75° F / 24° C" data-stat-four-label="Avg. Air Temp" data-stat-five="72° F / 22° C" data-stat-five-label="Avg. Water Temp" data-item-image="background-image: url(https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png);" data-full-date="November 6th 2022" 	data-event-title="IRONMAN 70.3 TURKEY" data-event-sub="Turkey" data-event-description="The beautiful stretch of Mediterranean coast along what’s known as the Turkish Riviera is loved for its mild climate, world-famous golf courses, and mixture of ancient sites and modern entertainment. Experience Turkish hospitality, linger in one of the five-star hotels, and enjoy the unique combination of sports and entertainment that this race has to offer." data-event-description-image="<img 	src='https://mytriathlon.co.uk/content/event-widgets/ironman-weymouth.png'/>" data-event-products="" data-button-label="More Info" filter-one="NOV" filter two="TR" filter-three="HI">
+							<div class="data-item-container">
+								<div class="image" style="{{item-image}}">
+									<div class="date">November 6th 2022</div>
+								</div>
+								<div class="event-header">
+									<h2>Ironman 70.3 Turkey</h2>
+									<h4>Belek, Turkey</h4>
+								</div>
+								<div class="stats">
+									<ul>
+										<li>
+											<span class="label">Swim</span>
+											<span class="value">Ocean</span>
+										</li>
+										<li>
+											<span class="label">Bike</span>
+											<span class="value">Flat</span>
+										</li>
+										<li>
+											<span class="label">Run</span>
+											<span class="value">Flat</span>
+										</li>
+									</ul>
+									<div class="buttons">
+										<div class="more-info-btn" data-id="{{data-id}}"><span class="icon"></span>More Information</div>
+									</div>
+								</div>
+							</div>
+						</li>
+				</ul>
+				<div class="data-item-viewer">
+					<div class="data-viewer-description"></div>
+					<div class="data-viewer-image"></div>
+					<div class="data-products-holder"><ul></ul></div>
+				</div>
+			</div>
+			<!------Sorting Data Widget Events End ------->
+			
+			<script type="text/javascript" src="../build/js/scripts.js"></script>
+		</body>
+	</body>

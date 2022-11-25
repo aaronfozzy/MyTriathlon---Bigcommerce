@@ -1,0 +1,48 @@
+.navPages-list {
+  .dropdown--quickSearch.is-open, .navUser-item.navUser-item--account, .navUser-item.navUser-item--wishlist, .navUser-item.navUser-item--cart {
+    display: none;
+  }
+}
+
+header.sticky-header {
+  .dropdown--quickSearch.is-open, .navUser-item.navUser-item--account, .navUser-item.navUser-item--wishlist, .navUser-item.navUser-item--cart {
+    display: inline-block;
+  }
+  .header-usp-container {
+    display: none!important;
+  }
+  .container {
+    display: none;
+  }
+  .dropdown--quickSearch.is-open {
+    float: left;
+    position: relative;
+    width: 200px!important;
+    top: 15px!important;
+    left: 0px!important;
+    .quickSearchResults {
+      display: none!important;
+    }
+  }
+  .navUser-item.navUser-item--account {
+    float: left;
+    top: 15px;
+    .icon-profile {
+      color: $color-white;
+    }
+  }
+  .navUser-item.navUser-item--wishlist {
+    position: relative;
+    top: 9px;
+    .navUser-action, .icon-wishlist {
+      color: $color-white;
+    }
+  }
+  .navUser-item.navUser-item--cart {
+    position: relative;
+    top: 9px;
+    .icon-shopping-cart, .navUser-item-cartLabel, .countPill.cart-quantity {
+      color: $color-white!important;
+    }
+  }
+}

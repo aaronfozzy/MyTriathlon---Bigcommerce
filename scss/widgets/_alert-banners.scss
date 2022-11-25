@@ -1,0 +1,23 @@
+.alert-banner {
+  width: 100%;
+  float: left;
+  clear:both;
+  text-align: center;
+  margin: 0px!important;
+  background-color: red;
+  color: white;
+  padding-top: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  .red-banner {
+    background-color: red;
+    color: white;
+    p {
+      color: white;
+    }
+  }
+  @include max-screen($screen-small){
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

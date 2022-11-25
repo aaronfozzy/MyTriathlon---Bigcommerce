@@ -1,0 +1,25 @@
+.sizing-guide-btn {
+  width: auto;
+  padding: 5px 10px 5px 10px;
+  color: $color-dblue;
+  border: 2px solid $color-lblue;
+  float: left;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0px;
+  font-size: 13px;
+  font-weight: bold;
+  color: $color-lblue;
+  border-radius: 50px;
+  top: -10px;
+}
+
+#sizing-guide-tab {
+  a {
+    span:nth-child(2) {
+      position:relative;
+      left: 5px;
+    }
+  }
+}

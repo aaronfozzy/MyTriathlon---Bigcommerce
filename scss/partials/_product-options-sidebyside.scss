@@ -1,0 +1,30 @@
+.productView-options {
+  div[data-product-option-change] {
+    display: flex;
+    justify-content: flex-start;
+    clear:both;
+    margin-top: 10px;
+    position: relative;
+    top: 20px;
+    div {
+      width: 50%;
+      input.form-input--small {
+        width: 90%;
+        height: auto!important;
+        float: left;
+        clear:both;
+        border: 2px solid $color-lgrey;
+        border-radius: 5px;
+        margin-right: 10%;
+      }
+      select.form-select--small {
+        width: 100%;
+        height:auto!important;
+        float: left;
+        clear:both;
+        border: 2px solid $color-lgrey;
+        border-radius: 5px;
+      }
+    }
+  }
+}

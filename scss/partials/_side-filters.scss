@@ -1,0 +1,34 @@
+.facetedSearch-refineFilters {
+	padding: 20px;
+	@include box-sizing(border);
+	.sidebarBlock-heading {
+		font-size: 16px;
+		font-weight: bold;
+	}
+}
+.facetedSearch {
+	padding-top: 0px!important;
+	margin-top: 10px!important;
+	background-color: darken($color-white, 2%)!important;
+}
+
+.facetedSearch-navList .accordion--navList .accordion-block ul.navList li.navList-item {
+	background-color: darken($color-white, 4%);
+	color: $color-white;
+	padding: 7.5px 0px 7.5px 15px;
+	border-bottom: 1px solid darken($color-white, 10%);
+	@include box-sizing(border);
+	a {
+		color: $color-black;
+		font-weight: 600;
+	}
+	&:first-child{
+		border-radius: 5px 5px 0px 0px;
+	}
+	&:last-child{
+		border-radius: 0px 0px 5px 5px;
+	}
+	&:hover {
+		background-color: darken($color-white, 8%);
+	}
+}

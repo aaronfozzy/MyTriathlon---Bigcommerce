@@ -1,0 +1,124 @@
+.alt-colours {
+  width: 100%;
+  float: left;
+  clear:both;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+  top: -20px;
+  .alt-colour-holder {
+    width: auto;
+    @include calc(min-width, "10% - 10px");
+    height: 60px;
+    background-color: $color-white;
+    border: 2px solid $color-lblue;
+    border-radius: 0px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 10px;
+    @include box-sizing(border);
+    @include max-screen($screen-huge){
+      @include calc(min-width, "20% - 10px");
+      @include calc(width, "20% - 10px");
+      margin-bottom: 10px;
+    }
+    @include max-screen($screen-medium){
+      @include calc(min-width, "25% - 10px");
+      @include calc(width, "25% - 10px");
+      margin-bottom: 10px;
+    }
+    .button-thumb {
+      width: 100%;
+      height: 100%;
+      float: left;
+      clear:both;
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    .button-hover {
+      display: none;
+      width: 120px;
+      height: 120px;
+      position: absolute;
+      top: -120px;
+      left: -25px;
+      border: 1px solid $color-lgrey;
+      z-index: 99999;
+      background-color: $color-white;
+      @extend .animated;
+      @extend .fadeIn;
+      .button-full-img {
+        width: 100%;
+        height: 100px;
+        float: left;
+        clear:both;
+        background-color: $color-white;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 100;
+      }
+      .button-label {
+        width: 100%;
+        float: left;
+        clear:both;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        background-color: $color-lgrey;
+        color: $color-black;
+        text-align: center;
+        font-weight: bold;
+        font-size: 12px;
+        z-index: 50;
+      }
+      &:after {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: -2.5px;
+        left: 25px;
+        z-index: 20;
+        background-color: $color-lgrey;
+        content: "";
+        @include transform(rotate(-45deg));
+      }
+    }
+    &.no-img {
+      @include calc(min-width, "20% - 10px");
+      .button-label {
+        width: 100%;
+        float: left;
+        clear:both;
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        background-color: $color-white;
+        color: $color-lblue;
+        text-align: center;
+        font-weight: bold;
+        font-size: 12px;
+        z-index: 50;
+        display: block;
+        @include transform(translate(0%, -50%));
+      }
+    }
+    &:hover {
+      background-color: $color-lblue;
+      border: 2px solid $color-dblue;
+      color: $color-white;
+      .button-label {
+        background-color: $color-lblue;
+        color: $color-white;
+      }
+      .button-hover {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.complete-the-look-widget {
+	width: 100%;
+	float: left;
+	clear:both;
+	display: none;
+	.content-holder {
+		width: 1440px;
+		margin: auto;
+		clear:both;
+		.title {
+			width: 100%;
+			float: left;
+			clear:both;
+			font-size: 18px;
+			font-weight: bold;
+			color: $color-black;
+		}
+		.description {
+			width: 100%;
+			float: left;
+			clear:both;
+			color: $color-black;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+		.products-holder {
+			width: 100%;
+			height: 230px;
+			float: left;
+			clear:both;
+			margin-top: 10px;
+		}
+	}
+	
+}

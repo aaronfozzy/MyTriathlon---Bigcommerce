@@ -1,0 +1,15 @@
+@include min-screen($screen-huge){
+  header .usp-list{
+    display: block;
+  }
+}
+@include max-screen($screen-large){
+  header .usp-list{
+    display: none;
+  }
+}
+.inner-container {
+  width: 1440px;
+  margin: auto;
+  clear:both;
+}

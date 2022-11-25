@@ -1,0 +1,57 @@
+.product-actions, .above-sizing-buttons, .blow-atc-buttons, .blow-usp-buttons {
+  width: 100%;
+  float: left;
+  clear:both;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  button {
+    @include calc(max-width, "25% - 5px");
+    @include calc(width, "25% - 5px");
+    width: 25%;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    float: left;
+    display: block;
+    background-color: $color-white;
+    color: $color-lblue;
+    font-size: 12px;
+    border-radius: 0px;
+    font-weight: bold;
+    margin-left: 0px!important;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border: 2px solid $color-lblue;
+    &:hover {
+      background-color: $color-lblue;
+      color: $color-white;
+    }
+    @include max-screen($screen-huge){
+      @include calc(max-width, "50% - 5px");
+      @include calc(width, "50% - 5px");
+    }
+    @include max-screen($screen-medium){
+      @include calc(max-width, "33.33333% - 5px");
+      @include calc(width, "33.33333% - 5px");
+      justify-content: center;
+      font-size: 12px;
+    }
+  }
+}
+
+.above-sizing-buttons {
+  margin-top: 20px;
+}
+
+.blow-usp-buttons {
+  position:relative;
+  z-index: 1000;
+  button {
+    @include calc(max-width, "20% - 5px");
+    @include calc(width, "20% - 5px");
+    width: 20%;
+  }
+}

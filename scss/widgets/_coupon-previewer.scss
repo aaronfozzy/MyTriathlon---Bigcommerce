@@ -1,0 +1,30 @@
+.theme-newsletter {
+  .mms-button {
+    width: 50px;
+    background-color: $color-red;
+    padding: 0px 5px 0px 5px;
+    .icon-newsletter {
+      background-color: $color-dblue;
+      color: $color-white;
+    }
+  }
+  
+  .form-field {
+    margin-bottom: 0px;
+  }
+  .coupon-previewer {
+    width: 100%;
+    float: left;
+    clear:both;
+    background-color: $color-dblue;
+    min-height: 50px;
+    display: none;
+    color: $color-white;
+    font-size: 15px;
+    line-height: 48px;
+    font-weight: bold;
+    @extend .animated;
+    @extend .fadeInUp;
+  }
+}
+

@@ -1,0 +1,815 @@
+.black-friday {
+  background: url(https://mytriathlon.co.uk/content/black-friday/final-triangle.png);
+  background-repeat: repeat;
+  position: relative;
+  .black-friday-bg-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: block;
+    z-index: 50;
+  }
+  h1 {
+    width: 100%;
+    float: left;
+    clear: both;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 30px 0px 0px 0px;
+    font-weight: bold;
+    font-size: 46px;
+  }
+  h2 {
+    width: 100%;
+    float: left;
+    clear: both;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 30px 0px 0px 0px;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  p {
+    width: 100%;
+    float: left;
+    clear: both;
+    color: white;
+    text-align: center;
+  }
+  section {
+    padding-bottom: 0px;
+    position: relative;
+    z-index: 100;
+  }
+  .black-friday-sections-holder {
+    width: 100%;
+    float: left;
+    clear: both;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    ul {
+      width: 100%;
+      float: left;
+      clear: both;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      li {
+        @include calc(width, "33.33333% - 4px");
+        float: left;
+        border: 2px solid $color-white;
+        a {
+          width: 100%;
+          float: left;
+          clear: both;
+          font-size: 28px;
+          text-transform: uppercase;
+          text-align: center;
+          color: white;
+          font-weight: bold;
+          padding: 50px 0px 50px 0px;
+          background-color: transparent;
+          &:hover {
+            background-color: $color-lblue;
+          }
+        }
+      }
+    }
+  }
+  .black-friday-brand-holder {
+    width: 100%;
+    float: left;
+    clear: both;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    ul {
+      width: 100%;
+      float: left;
+      clear: both;
+      margin: 0px;
+      padding: 0px;
+      li {
+        @include calc(width, "20% - 4px");
+        float: left;
+        border: 2px solid $color-white;
+        a {
+          width: 100%;
+          float: left;
+          clear: both;
+          font-size: 28px;
+          text-transform: uppercase;
+          text-align: center;
+          color: white;
+          font-weight: bold;
+          padding: 50px 0px 50px 0px;
+          background-color: transparent;
+          &:hover {
+            background-color: $color-lblue;
+          }
+        }
+      }
+    }
+  }
+  .black-friday-discount-holder {
+    width: 100%;
+    float: left;
+    clear: both;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    ul {
+      width: 100%;
+      float: left;
+      clear: both;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      li {
+        @include calc(width, "25% - 4px");
+        float: left;
+        border: 2px solid $color-white;
+        a {
+          width: 100%;
+          float: left;
+          clear: both;
+          font-size: 28px;
+          text-transform: uppercase;
+          text-align: center;
+          color: white;
+          font-weight: bold;
+          padding: 50px 0px 50px 0px;
+          background-color: transparent;
+          &:hover {
+            background-color: $color-lblue;
+          }
+        }
+      }
+    }
+  }
+  .black-friday-navigation {
+    width: 100%;
+    float: left;
+    clear: both;
+    background-color: transparent;
+    margin: 20px 0px 20px 0px;
+    border: 2px solid $color-white;
+    ul {
+      width: 100%;
+      float: left;
+      clear: both;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      li {
+        width: 20%;
+        float: left;
+        a {
+          width: 100%;
+          float: left;
+          color: white;
+          text-align: center;
+          background-color: transparent;
+          padding: 10px 0px 10px 0px;
+          text-transform: uppercase;
+          font-weight: bold;
+          &:hover {
+            background-color: lighten($color-lblue, 5%);
+          }
+        }
+      }
+    }
+  }
+}
+.site-header,
+.page-navigation {
+  z-index: 1000;
+  position: relative;
+}
+.main-nav-bar {
+  z-index: 950;
+}
+.usp-section {
+  z-index: 900;
+  position: relative;
+}
+.black-friday-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 800;
+  display: block;
+  &.inactive {
+    display: none;
+  }
+}
+.black-friday-form {
+  width: 1200px;
+  float: left;
+  clear: both;
+  background-color: black;
+  color: $color-white;
+  padding: 30px;
+  position: fixed;
+  z-index: 2000;
+  top: 50%;
+  left: 50%;
+  display: block;
+  &.inactive {
+    display: none;
+  }
+  @include max-screen(1024px) {
+    width: 100%;
+  }
+  @include max-screen(960px) {
+    top: 45%;
+  }
+  @include transform(translate(-50%, -50%));
+  @include box-sizing(border);
+  .leftcol {
+    @include calc(width, "50% - 20px");
+    float: left;
+    clear: both;
+    margin: 0px 20px 0px 0px;
+    @include max-screen($screen-large) {
+      width: 100%;
+      float: left;
+      clear: both;
+    }
+    .title {
+      width: 100%;
+      float: left;
+      clear: both;
+      font-size: 50px;
+      text-transform: uppercase;
+      font-weight: bold;
+      @include max-screen(400px) {
+        font-size: 35px;
+      }
+    }
+    .usp-text {
+      width: 100%;
+      float: left;
+      clear: both;
+      p {
+        float: left;
+        clear: both;
+        background-color: $color-white;
+        color: black;
+        text-transform: uppercase;
+        padding: 5px 5px 5px 5px;
+        font-size: 20px;
+        margin: 0px;
+        @include max-screen(400px) {
+          font-size: 15px;
+        }
+      }
+    }
+    .small-text {
+      width: 100%;
+      float: left;
+      clear: both;
+      font-size: 10px;
+      color: $color-white;
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
+  }
+  .rightcol {
+    @include calc(width, "50% - 20px");
+    float: left;
+    margin: 0px;
+    @include max-screen($screen-large) {
+      width: 100%;
+      float: left;
+      clear: both;
+    }
+  }
+}
+
+.black-friday-offers-holder {
+  width: 100%;
+  float: left;
+  clear: both;
+  ul {
+    width: 100%;
+    float: left;
+    clear: both;
+    list-style: none;
+    li {
+      width: 300px;
+      min-height: 462px;
+      float: left;
+      margin-bottom: 20px;
+      @include max-screen(1024px) {
+      }
+      @include max-screen(604px) {
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%, 0%));
+      }
+      &.offer2-1,
+      &.offer2-2,
+      &.offer2-3,
+      &.offer2-4,
+      &.offer2-5,
+      &.offer2-6,
+      &.offer2-7,
+      &.offer2-8,
+      &.offer2-9,
+      &.offer2-10,
+      &.offer2-11,
+      &.offer2-12,
+      &.offer2-13,
+      &.offer2-14,
+      &.offer2-15,
+      &.offer2-16,
+      &.offer2-17,
+      &.offer2-18,
+      &.offer2-19,
+      &.offer2-20,
+      &.offer2-21,
+      &.offer2-22,
+      &.offer2-23,
+      &.offer2-24,
+      &.offer2-25,
+      &.offer2-26,
+      &.offer2-27 {
+        background-repeat: no-repeat;
+        position: relative;
+        background-position: center;
+
+        .offer-active {
+          text-align: center;
+          top: 41.5%;
+          left: 11%;
+          text-transform: uppercase;
+          position: absolute;
+          height: 70px;
+          width: 240px;
+          color: $color-white;
+        }
+        .active-name {
+          width: 240px;
+          height: 40px;
+          float: left;
+          text-align: center;
+          clear: both;
+          font-size: 27.34px;
+          font-weight: bold;
+        }
+        .active-name2 {
+          width: 240px;
+          height: 40px;
+          float: left;
+          text-align: center;
+          clear: both;
+          font-size: 25.34px;
+          font-weight: bold;
+          padding-right: 3px;
+        }
+        .active-name3 {
+          width: 240px;
+          height: 40px;
+          float: left;
+          text-align: center;
+          clear: both;
+          font-size: 20.34px;
+          font-weight: bold;
+          padding-top: 5px;
+          padding-right: 3px;
+        }
+        .active-name4 {
+          width: 240px;
+          height: 40px;
+          float: left;
+          text-align: center;
+          clear: both;
+          font-size: 25.34px;
+          font-weight: bold;
+          padding-right: 3px;
+        }
+        .active-name5 {
+          width: 240px;
+          height: 40px;
+          float: left;
+          text-align: center;
+          clear: both;
+          font-size: 19.34px;
+          font-weight: bold;
+          padding-top: 5px;
+          padding-right: 3px;
+        }
+        .active-name6 {
+          width: 240px;
+          height: 40px;
+          float: left;
+          text-align: center;
+          clear: both;
+          font-size: 27.34px;
+          font-weight: bold;
+          padding-top: 10px;
+        }
+        .active-offer-off {
+          width: 240px;
+          height: 30px;
+          float: left;
+          text-align: center;
+          clear: both;
+          font-size: 19.34px;
+          font-weight: bolder;
+        }
+        .active-offer-off2 {
+          width: 240px;
+          height: 30px;
+          float: left;
+          text-align: center;
+          clear: both;
+          font-size: 19.34px;
+          font-weight: bolder;
+          padding-top: 10px;
+        }
+        &.offer2-1 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/2XU-Run.png);
+        }
+        &.offer2-2 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/2xu-cycle.png);
+        }
+        &.offer2-3 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/2xu-compression.png);
+        }
+        &.offer2-4 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/2xu-tri-2018.png);
+        }
+        &.offer2-5 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/2xu-tri-prior.png);
+        }
+        &.offer2-6 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/zone3-prior.png);
+        }
+        &.offer2-7 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/zone3-2018.png);
+        }
+        &.offer2-8 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/orca-2018.png);
+        }
+        &.offer2-9 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/orca-prior.png);
+        }
+        &.offer2-10 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/swimsecure.png);
+        }
+        &.offer2-11 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/compressport-prior.png);
+        }
+        &.offer2-12 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/endura.png);
+        }
+        &.offer2-13 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/zoot-prior.png);
+        }
+        &.offer2-14 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/zoot-2018.png);
+        }
+        &.offer2-15 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/QR.png);
+        }
+        &.offer2-16 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/ceepo.png);
+        }
+        &.offer2-17 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/HUUB-Dave-Scott.png);
+        }
+        &.offer2-18 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/HUUB-Essential.png);
+        }
+        &.offer2-19 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/Oakley.png);
+        }
+        &.offer2-20 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/b70-prior.png);
+        }
+        &.offer2-21 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/zerod.png);
+        }
+        &.offer2-22 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/fusion.png);
+        }
+        &.offer2-23 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/tyr.png);
+        }
+        &.offer2-24 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/shoes-prior.png);
+        }
+        &.offer2-25 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/shoes-current.png);
+        }
+        &.offer2-26 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/aquasphere.png);
+        }
+        &.offer2-27 {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/santini.png);
+        }
+      }
+      &.offer {
+        background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/offer-background.png);
+        background-repeat: no-repeat;
+        position: relative;
+        background-position: center;
+        .sticker {
+          width: 78px;
+          height: 78px;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          &.question {
+            background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/offer-question.png);
+            background-repeat: no-repeat;
+          }
+          &.ten {
+            background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/10_-Off.png);
+            background-repeat: no-repeat;
+          }
+          &.fiveteen {
+            background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/15.png);
+            background-repeat: no-repeat;
+          }
+          &.twenty {
+            background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/20_-Off.png);
+            background-repeat: no-repeat;
+          }
+          &.twentyfive {
+            background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/25.png);
+            background-repeat: no-repeat;
+          }
+          &.thirty {
+            background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/30_-Off.png);
+            background-repeat: no-repeat;
+          }
+          &.thirtyfive {
+            background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/35.png);
+            background-repeat: no-repeat;
+          }
+          &.fourty {
+            background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/40_-Off.png);
+            background-repeat: no-repeat;
+          }
+          &.fourtyfive {
+            background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/45.png);
+            background-repeat: no-repeat;
+          }
+          &.fifty {
+            background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/50_-Off.png);
+            background-repeat: no-repeat;
+          }
+        }
+        .product-image-shadow,
+        .product-image-active {
+          //width: 109px;
+          max-height: 320px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          @include transform(translate(-50%, -50%));
+        }
+        .bottom-timer {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/offeravailableinredbox.png);
+          background-repeat: no-repeat;
+          width: 243px;
+          height: 72px;
+          position: absolute;
+          top: 75%;
+          left: 50%;
+          @include transform(translate(-50%, -50%));
+          @include box-sizing(border);
+          .title {
+            width: 100%;
+            height: 20px;
+            float: left;
+            clear: both;
+            color: $color-white;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 14.25px;
+          }
+          .bottom-days,
+          .bottom-minutes,
+          .bottom-hours,
+          .bottom-seconds {
+            width: 25%;
+            float: left;
+            .number,
+            .label {
+              width: 100%;
+              float: left;
+              clear: both;
+              text-align: center;
+              color: $color-white;
+            }
+            .number {
+              margin-top: -6px;
+              font-size: 33.67px;
+              height: 35px;
+              font-weight: bold;
+            }
+            .label {
+              height: 10px;
+              margin-top: 5px;
+              font-size: 10px;
+              font-weight: bolder;
+              text-transform: uppercase;
+            }
+          }
+        }
+        .top-timer {
+          width: 80%;
+          height: 50px;
+          position: absolute;
+          top: 10%;
+          left: 50%;
+          @include transform(translate(-50%, -50%));
+          background-color: $color-black;
+          .top-days,
+          .top-minutes,
+          .top-hours,
+          .top-seconds {
+            width: 25%;
+            float: left;
+            text-align: center;
+            .number,
+            .label {
+              width: 100%;
+              float: left;
+              clear: both;
+              text-align: center;
+              color: $color-white;
+            }
+            .number {
+              margin-top: -6px;
+              font-size: 33.67px;
+              height: 40px;
+              font-weight: bold;
+            }
+            .label {
+              font-size: 10px;
+              height: 15px;
+              font-weight: bolder;
+              text-transform: uppercase;
+            }
+          }
+        }
+        .product-link {
+          width: 243px;
+          height: 112px;
+          position: absolute;
+          text-align: center;
+          top: 92%;
+          left: 50%;
+          background-color: #f0282f;
+          @include box-sizing(border);
+          @include transform(translate(-50%, -50%));
+          .name-border {
+            width: 100%;
+            height: 43px;
+            float: left;
+            clear: both;
+          }
+          .product-name {
+            width: 100%;
+            height: 10px;
+            float: left;
+            clear: both;
+            color: $color-white;
+            text-transform: uppercase;
+            font-weight: bolder;
+            font-size: 14px;
+            top: 50%;
+            left: 50%;
+            @include transform(translate(0%, 50%));
+          }
+          .product-was-price,
+          .product-is-price,
+          .product-now-price {
+            color: $color-white;
+          }
+          .product-was-price {
+            width: 100%;
+            float: left;
+            font-size: 12.62px;
+            font-weight: lighter;
+            text-transform: uppercase;
+            margin-top: 6px;
+            text-align: center;
+          }
+          .product-is-price {
+            width: 100%;
+            float: left;
+            height: 28px;
+            font-size: 20.38px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+          }
+        }
+        .product-image-expired {
+          width: 294px;
+          max-height: 320px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          @include transform(translate(-50%, -50%));
+        }
+        .offer-expired {
+          background-image: url(https://mytriathlon.co.uk/content/newsite/black-friday-2018/other-images/offerexpiredbox.png);
+          background-repeat: no-repeat;
+          width: 193px;
+          height: 40px;
+          position: absolute;
+          background-color: #e41a1f;
+          top: 92%;
+          left: 50%;
+          @include transform(translate(-50%, -50%));
+        }
+      }
+      &.locked {
+        .top-timer,
+        .product-image-active,
+        .product-link,
+        .product-image-expired,
+        .offer-timed-active,
+        .offer-active,
+        .offer-expired,
+        .sticker {
+          display: none;
+        }
+        .product-image-shadow,
+        .bottom-timer,
+        .sticker.question {
+          display: block;
+        }
+      }
+      &.timed-active {
+        cursor: pointer;
+        .top-timer,
+        .product-image-active,
+        .product-link,
+        .product-link,
+        .offer-timed-active,
+        .sticker {
+          display: block;
+        }
+        .product-image-shadow,
+        .bottom-timer,
+        .product-image-expired,
+        .offer-active,
+        .offer-expired,
+        .sticker.question {
+          display: none;
+        }
+      }
+      &.active {
+        .product-image-active,
+        .product-link,
+        .sticker,
+        .offer-active {
+          display: block;
+        }
+        .product-image-shadow,
+        .bottom-timer,
+        .top-timer,
+        .product-image-expired,
+        .offer-timed-active,
+        .offer-expired,
+        .sticker.question {
+          display: none;
+        }
+      }
+      &.expired {
+        display: none;
+        .product-image-expired,
+        .offer-expired {
+          display: block;
+        }
+        .product-image-shadow,
+        .product-image-active,
+        .sticker,
+        .bottom-timer,
+        .top-timer,
+        .product-link,
+        .offer-timed-active,
+        .offer-active {
+          display: none;
+        }
+      }
+    }
+  }
+}

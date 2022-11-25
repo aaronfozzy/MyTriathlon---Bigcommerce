@@ -1,0 +1,47 @@
+.productView-options {
+  a[aria-controls=wishlist-dropdown]{
+    &:hover {
+      background-color: lighten($color-dblue, 5%);
+      color: $color-white;
+      &.icon svg {
+        fill: $color-white!important;
+      }
+    }
+    &.is-open {
+      border-radius: 20px 20px 0px 0px!important;
+    }
+  }
+  ul#wishlist-dropdown {
+    border-radius: 0px 0px 20px 20px;
+    overflow: hidden;
+    border: 1px solid $color-dblue;
+    @extend .animated;
+    @extend .fadeIn;
+    li {
+      background-color: $color-white;
+      color: $color-dblue;
+      input.button {
+        border: none;
+        border-radius: 0px!important;
+        color: $color-dblue!important;
+        &:hover {
+          background-color: $color-dblue!important;
+          color: $color-white!important;
+        }
+      }
+      a.button {
+        border: none!important;
+        border-radius: 0px!important;
+        color: $color-dblue!important;
+        &:hover {
+          background-color: $color-dblue!important;
+          color: $color-white!important;
+        }
+      }
+    }
+  }
+}
+
+.productView-options .form-wishlist .dropdown-menu-button:hover .icon svg {
+  fill: $color-white!important;
+}

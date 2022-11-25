@@ -1,0 +1,12 @@
+.card {
+	min-height: 630px;
+	.rrp-price--withTax {
+		display: none;
+	}
+	.non-sale-price--withTax {
+		display: none;
+	}
+	&:hover {
+		min-height: 100px;
+	}
+}

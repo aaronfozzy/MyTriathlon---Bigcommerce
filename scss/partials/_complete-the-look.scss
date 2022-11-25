@@ -1,0 +1,81 @@
+.complete-the-look-section {
+  width: 100%;
+  float: left;
+  clear: both;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  .look-item {
+    width: auto;
+    @include calc(min-width, "12.5% - 20px");
+    margin-right: 20px;
+    a {
+      width: 100%;
+      float: left;
+      clear:both;
+      text-decoration: none;
+      .look-img {
+        width: 100%;
+        height: 150px;
+        float: left;
+        clear:both;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .look-label {
+        width: 100%;
+        float: left;
+        clear:both;
+        font-size: 13px;
+        font-weight: bold;
+        color: $color-black;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+    @include max-screen($screen-huge){
+      @include calc(min-width, "33.33333% - 20px");
+    }
+    @include max-screen($screen-medium){
+      @include calc(min-width, "50% - 20px");
+      font-size: 12px;
+    }
+  }
+}
+
+.complete-the-look-btn {
+  width: auto;
+  padding: 5px 10px 5px 10px;
+  color: $color-dblue;
+  border: 2px solid $color-lblue;
+  float: right;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0px;
+  font-size: 13px;
+  font-weight: bold;
+  color: $color-lblue;
+  border-radius: 50px;
+  top: -10px;
+  margin-right: 5px;
+}
+
+.productView-options {
+  a{
+    border-radius: 50px;
+  }
+  .theme-btn-secondary {
+    border-radius: 50px;
+  }
+}
+
+#complete-the-look-tab {
+  a {
+    span:nth-child(2) {
+      position:relative;
+      left: 5px;
+    }
+  }
+}
